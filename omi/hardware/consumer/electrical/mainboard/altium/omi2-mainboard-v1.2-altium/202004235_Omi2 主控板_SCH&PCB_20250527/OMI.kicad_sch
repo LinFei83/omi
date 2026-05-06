@@ -1,0 +1,501 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2ce67a29-d7dc-43ae-8733-f8dd74bd9ea4")
+	(paper "A3")
+	(title_block
+		(title "OMI 2")
+		(rev "v0.5")
+	)
+	(lib_symbols)
+	(text "Revision History"
+		(exclude_from_sim no)
+		(at 71.882 38.354 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "412926dd-7538-47fa-a0f4-93f5bcc26012")
+	)
+	(table
+		(column_count 4)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 15.24 113.03 36.83 20.32)
+		(row_heights 3.81 3.81 40.64 27.94 22.86 22.86)
+		(cells
+			(table_cell "Revision"
+				(exclude_from_sim no)
+				(at 53.34 45.72 0)
+				(size 15.24 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left top)
+				)
+				(uuid "d7b707c6-938c-4136-8a59-bf4ddbd05544")
+			)
+			(table_cell "Description"
+				(exclude_from_sim no)
+				(at 68.58 45.72 0)
+				(size 113.03 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left top)
+				)
+				(uuid "cf455e2d-a27e-44a4-abdd-37770aeb92db")
+			)
+			(table_cell "Date"
+				(exclude_from_sim no)
+				(at 181.61 45.72 0)
+				(size 36.83 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left top)
+				)
+				(uuid "e669944d-3830-42df-ac0c-c8c58e2a5c8a")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 218.44 45.72 0)
+				(size 20.32 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left top)
+				)
+				(uuid "4b36a8a4-baf1-423b-ad28-0f48f2ccc344")
+			)
+			(table_cell "v01"
+				(exclude_from_sim no)
+				(at 53.34 49.53 0)
+				(size 15.24 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "500005a4-e11c-4899-8a37-c95105cdd2ef")
+			)
+			(table_cell "Initial release"
+				(exclude_from_sim no)
+				(at 68.58 49.53 0)
+				(size 113.03 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "62dc39e8-dc94-4570-b726-da4579b87013")
+			)
+			(table_cell "2025/01/10"
+				(exclude_from_sim no)
+				(at 181.61 49.53 0)
+				(size 36.83 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "9b437be2-2df3-4c9e-bd81-56c90e3fc401")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 218.44 49.53 0)
+				(size 20.32 3.81)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+				)
+				(uuid "58d0e221-8f9d-47b1-b7ef-d2c5259b0e67")
+			)
+			(table_cell "v02"
+				(exclude_from_sim no)
+				(at 53.34 53.34 0)
+				(size 15.24 40.64)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "237c99c2-e879-403b-9d69-7fbf4fade3ed")
+			)
+			(table_cell "1. Fixed the DCDC power enable control problem and reversed the enable logic\n2. Replaced the charging management chip with TI BQ25101 and added the battery charging temperature detection function\n3. Modified the battery installation method and improved the assembly process\n4. Added another microphone and modified the microphone installation method for easy assembly\n5. Added a rectifier bridge at the charging input to avoid reverse power connection during magnetic charging\n6. Added another LED to improve the light transmission effect"
+				(exclude_from_sim no)
+				(at 68.58 53.34 0)
+				(size 113.03 40.64)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "9d8df5e7-a792-4644-83ea-2f7b329bf028")
+			)
+			(table_cell "2025/04/01"
+				(exclude_from_sim no)
+				(at 181.61 53.34 0)
+				(size 36.83 40.64)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "06fcd447-908c-4a5e-a82c-d1c504348565")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 218.44 53.34 0)
+				(size 20.32 40.64)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "59fefdb1-69ef-4e41-9799-180d5aa4425b")
+			)
+			(table_cell "v03"
+				(exclude_from_sim no)
+				(at 53.34 93.98 0)
+				(size 15.24 27.94)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "36aea0b1-7200-4b36-b3f9-3c980b0886dd")
+			)
+			(table_cell "1. Add a manual reset function. Press and hold the button and place the device on the charger to reset the MCU.\n2. Change the power input rectifier bridge circuit to an anti-reverse connection circuit to reduce the voltage drop caused by the input diode and avoid affecting the charging current.\n3. Add power control of the RF analog switch to save power consumption."
+				(exclude_from_sim no)
+				(at 68.58 93.98 0)
+				(size 113.03 27.94)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "aa660143-1bfa-46ab-91c5-bb7c4f85e5a4")
+			)
+			(table_cell "2025/04/15"
+				(exclude_from_sim no)
+				(at 181.61 93.98 0)
+				(size 36.83 27.94)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "b7b3a323-72ed-4ee0-b769-739ba7de67dd")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 218.44 93.98 0)
+				(size 20.32 27.94)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b1dbdf7e-b508-4c65-b677-1d096117cc2d")
+			)
+			(table_cell "v04"
+				(exclude_from_sim no)
+				(at 53.34 121.92 0)
+				(size 15.24 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "497a88ba-bb2f-465e-bcf8-fb07cfcd9dc3")
+			)
+			(table_cell "1. Updated the layout to solve the problem of poor WiFi 2.4G signal\n2. Changed the vibration motor to LDO power supply to improve vibration reliability\n3. Changed the positioning pin of J1 to NC, which is short-circuited with the signal pin on the connector"
+				(exclude_from_sim no)
+				(at 68.58 121.92 0)
+				(size 113.03 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "889736cd-bf25-41c7-a83c-d86ea1340662")
+			)
+			(table_cell "2025/05/12"
+				(exclude_from_sim no)
+				(at 181.61 121.92 0)
+				(size 36.83 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "cd789987-d2b2-4fe0-98e8-3df6739c40bb")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 218.44 121.92 0)
+				(size 20.32 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3fc85653-996c-4605-8c6e-477678137fb1")
+			)
+			(table_cell "v05"
+				(exclude_from_sim no)
+				(at 53.34 144.78 0)
+				(size 15.24 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "8d0308a0-da68-460f-8aa0-d9693b450047")
+			)
+			(table_cell "1. Remove the bat+ net on J1 to avoid battery short circuit caused by misalignment of the connector when snapping together"
+				(exclude_from_sim no)
+				(at 68.58 144.78 0)
+				(size 113.03 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "0a9053fe-40bd-40a1-b007-6d3ce1a04572")
+			)
+			(table_cell "202/05/27"
+				(exclude_from_sim no)
+				(at 181.61 144.78 0)
+				(size 36.83 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 2 2)
+					)
+					(justify left)
+				)
+				(uuid "d1204ada-93c3-4585-937d-314493e5f264")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 218.44 144.78 0)
+				(size 20.32 22.86)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b66dd8ca-e0d1-45ff-9632-a7988777dcda")
+			)
+		)
+	)
+	(sheet
+		(at 267.97 261.62)
+		(size 21.59 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "615e2623-bcad-473c-aae2-de0ef1945da0")
+		(property "Sheetname" "nRF5340"
+			(at 267.97 260.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "nRF5340.kicad_sch"
+			(at 267.97 271.0946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "OMI"
+				(path "/2ce67a29-d7dc-43ae-8733-f8dd74bd9ea4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

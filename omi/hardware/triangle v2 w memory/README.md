@@ -1,335 +1,342 @@
-> ⚠️ WARNING: For the proper function of the speaker, the circuit diagram and assembly steps have been slightly modified. If you possess a device assembled before August 23, 2024, you need to modify it. Please refer to the [Speaker function correction for earlier models](#speaker-function-correction-for-earlier-models) section for detailed instructions.
+> ⚠️ 警告：为确保扬声器正常工作，电路图和组装步骤已进行了轻微修改。如果您的设备是在2024年8月23日之前组装的，需要进行修改。详细说明请参阅[早期型号的扬声器功能修正](#早期型号的扬声器功能修正)部分。
 
-> ⚠️ Disclaimer: This device is currently a developer version that has not been fully tested. Some new functionality may not be fully covered by the firmware.
+> ⚠️ 免责声明：此设备目前是尚未经过全面测试的开发者版本。某些新功能可能尚未完全被固件覆盖。
 
 # Omi Triangle v2
 
-Omi Triangle v2 is an upgraded version of Omi Triangle v1, featuring added memory, a speaker, and a configurable momentary button.
+Omi Triangle v2 是 Omi Triangle v1 的升级版本，新增了内存、扬声器和可配置的瞬时按钮。
 
-**Circuit Diagram:**
+https://github.com/adafruit/Adafruit-Audio-BFF-PCB
 
-![Circuit diagram](pics/circuit.jpg)
+https://wiki.seeedstudio.com/cn/XIAO_BLE/
 
----
+**电路图：**
 
-# Assembly guide
+![电路图](pics/circuit.jpg)
 
-Estimated Time: 50 min
+![image-20260427141413569](E:\Desktop\omi\omi\hardware\triangle v2 w memory\assets\image-20260427141413569.png)
 
-# Table of contents
-
-1. [Component List](#1-component-list)
-2. [Tools and Materials](#2-tools-and-materials)
-3. [Assembly Steps](#3-assembly-steps)
-   - [Step 1: Prepare the Adafruit 5769 Board](#step-1-prepare-the-adafruit-5769-board)
-   - [Step 2: Solder XIAO nRF52840 Sense to Adafruit 5769 Board](#step-2-solder-xiao-nrf52840-sense-to-adafruit-5769-board)
-   - [Step 3: Attach the Button](#step-3-attach-the-button)
-   - [Step 4: Solder Board Edges with Wire](#step-4-solder-board-edges-with-wire)
-   - [Step 5: Solder the Speaker](#step-5-solder-the-speaker)
-   - [Step 6: Solder the Battery](#step-6-solder-the-battery)
-   - [Step 7: Clean the Board](#step-7-clean-the-board)
-   - [Step 8: Assembly Preparation](#step-8-assembly-preparation)
-   - [Step 9: Attach the Speaker to the Enclosure](#step-9-attach-the-speaker-to-the-enclosure)
-   - [Step 10: Microphone Noise Isolation (Optional)](#step-10-microphone-noise-isolation-optional)
-   - [Step 11: Assemble the Device](#step-11-assemble-the-device)
-4. [Speaker function correction for earlier models](#speaker-function-correction-for-earlier-models)
+![image-20260427165029078](E:\Desktop\omi\omi\hardware\triangle v2 w memory\assets\image-20260427165029078.png)
 
 ---
 
-## 1. Component list
+# 组装指南
+
+预计时间：50分钟
+
+# 目录
+
+1. [组件列表](#1-组件列表)
+2. [工具和材料](#2-工具和材料)
+3. [组装步骤](#3-组装步骤)
+   - [步骤1：准备Adafruit 5769开发板](#步骤1准备adafruit-5769开发板)
+   - [步骤2：将XIAO nRF52840 Sense焊接到Adafruit 5769开发板](#步骤2将xiao-nrf52840-sense焊接到adafruit-5769开发板)
+   - [步骤3：安装按钮](#步骤3安装按钮)
+   - [步骤4：用导线焊接开发板边缘](#步骤4用导线焊接开发板边缘)
+   - [步骤5：焊接扬声器](#步骤5焊接扬声器)
+   - [步骤6：焊接电池](#步骤6焊接电池)
+   - [步骤7：清洁开发板](#步骤7清洁开发板)
+   - [步骤8：组装准备](#步骤8组装准备)
+   - [步骤9：将扬声器固定到外壳](#步骤9将扬声器固定到外壳)
+   - [步骤10：麦克风噪音隔离（可选）](#步骤10麦克风噪音隔离可选)
+   - [步骤11：组装设备](#步骤11组装设备)
+4. [早期型号的扬声器功能修正](#早期型号的扬声器功能修正)
+
+---
+
+## 1. 组件列表
 
 - **[Seeed Studio XIAO nRF52840 Sense](https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html)**
 - **[Adafruit 5769 Audio BFF Add-On for QT Py](https://www.adafruit.com/product/5769)**
-- **[OWS-091630W50A-8 Speaker (8Ω, 1W, Top Port, 95dB)](https://www.digikey.com/en/products/detail/ole-wolff-electronics-inc/OWS-091630W50A-8/17636881)**
-- **[502030 250mAh LiPo Battery](https://www.amazon.com/EEMB-Rechargeable-Connector-Parrott-Polarity/dp/B0B7R8CS2C)**
-- **[4x4x1.5 SMD Button](https://www.amazon.com/4x4x1-5mm-Momentary-Tactile-Button-Switch/dp/B00FZLECO4)**
-- **[28-30 AWG Wire, Solid Core](https://www.amazon.com/dp/B07G2SWB19)**
-- **Micro SD Card (any)**
-- **3d-printed enclosure**
+- **[OWS-091630W50A-8 扬声器 (8Ω, 1W, 顶部出口, 95dB)](https://www.digikey.com/en/products/detail/ole-wolff-electronics-inc/OWS-091630W50A-8/17636881)**
+- **[502030 250mAh 锂聚合物电池](https://www.amazon.com/EEMB-Rechargeable-Connector-Parrott-Polarity/dp/B0B7R8CS2C)**
+- **[4x4x1.5 贴片按钮](https://www.amazon.com/4x4x1-5mm-Momentary-Tactile-Button-Switch/dp/B00FZLECO4)**
+- **[28-30 AWG 导线，实芯](https://www.amazon.com/dp/B07G2SWB19)**
+- **Micro SD 卡（任意）**
+- **3D打印外壳**
 
-The enclosure comes with two versions of the top cover:
+外壳提供两个版本的顶盖：
 
-1. "High tolerance" version: Provides a tight fit for the lid. While more pleasant to use, it may be more challenging to print (because you have to maintain fairly precise clearances).
-2. "Low tolerance" version: Designed for gluing the lid in place.
+1. "高精度"版本：提供紧密的盖子配合。虽然使用更舒适，但打印可能更具挑战性（因为您必须保持相当精确的间隙）。
+2. "低精度"版本：设计用于粘接固定盖子。
 
-It is recommended to print both versions and choose the most appropriate one based on your printing capabilities.
-
-
-## 2. Tools and materials
-
-- **[Soldering iron](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)**
-- **[Solder wire](https://a.co/d/62oBw1u)**
-- **[Soldering flux](https://a.co/d/gNpLJZa)**
-- **[Micro wire cutter](https://a.co/d/6FFrCi5)**
-- **Precision tweezers**
-- **Craft knife**
-- **Cyanoacrylate glue (aka super glue)**
-- **Hot glue gun**
-- **Thin double-sided tape**
-- **Ruler or caliper**
-- **Isopropyl alcohol and cotton swabs**
-- **Optional: wire stripper**
-- **Optional: [UV resin and UV light](https://a.co/d/4x64SlM)**
-- **Optional: [Foam seal gasket 1/16 in thick](https://a.co/d/awwI9Hz)**
-- **Optional: [1 mm hole punch](https://a.co/d/2ZA8CoM)**
-
-## 3. Assembly steps
-
-### Step 1: Prepare the Adafruit 5769 board
-
-1. Identify the PicoBlade connector on the Adafruit 5769 board.
-
-   ![PicoBlade uncut](pics/1_picoblade_uncut.jpg)
-
-2. Using wire cutters, carefully cut off the top of the PicoBlade connector.
-
-   ![PicoBlade cut](pics/2_picoblade_cut.jpg)
-
-### Step 2: Solder XIAO nRF52840 Sense to Adafruit 5769 board
-
-1. Place the two boards side-by-side on a clean, rigid surface. Use a napkin underneath to keep your work area clean.
-
-2. Identify the top 6 pins that need to be soldered between the boards.
-
-   ![Boards side-by-side](pics/3_boards_side-by-side.jpg)
-
-3. Apply a small amount of soldering flux to the pads you'll be soldering.
-
-   ![Boards flux applied](pics/4_boards_flux_applied.jpg)
-
-4. Set your soldering iron to the correct temperature (250°C is enough for lead-containing solder).
-
-5. Apply solder to a first pad, spending about 3-4 seconds per contact. Be careful not to overheat the boards.
-
-   ![First pad soldered](pics/5_first_pad_soldered.jpg)
-
-💡 Tip: Allow the solder to solidify for 2-3 seconds before moving the boards.
-
-6. Check the flatness of the board connection. Resolder it if not flat. Otherwise it won't fit inside the case.
-
-   ![Board flatness](pics/6_board_flatness.jpg)
- 
-7. Apply solder to pads 2-6, spending about 3-4 seconds per contact. Be careful not to overheat the boards.
-
-   ![All pads soldered 1](pics/7_all_pads_soldered_1.jpg)
-   ![All pads soldered 2](pics/8_all_pads_soldered_2.jpg)
-
-8. Check that the solder is visible from the other side of the boards to ensure a solid connection.
-
-   ![All pads other side](pics/9_all_pads_other_side.jpg)
-
-⚠️ Warning: Be careful not to touch any components other than the pads you're soldering to avoid damaging the boards.
-
-💡 Tip: Use flux sparingly to avoid getting it near the microphone hole or inside the SD card slot.
-
-### Step 3: Attach the button
-
-1. Bend the button contacts as shown in the images below.
-
-   ![Bent button contacts 1](pics/10_bent_button_contacts_1.jpg)
-   ![Bent button contacts 2](pics/11_bent_button_contacts_2.jpg)
-
-2. Apply a small amount of cyanoacrylate glue or UV resin to the bottom of the button.
-
-⚠️ Warning: Be careful not to use too much glue, as excess could interfere with the button's functionality.
-
-3. Carefully position the button on the board as shown in the image.
-
-   ![Button placed 1](pics/12_button_placed_1.jpg)
-   ![Button placed 2](pics/13_button_placed_2.jpg)
-   ![Button placed 3](pics/14_button_placed_3.jpg)
-
-4. If using cyanoacrylate glue, apply firm pressure to the button until the glue sets.
-
-5. If using UV resin, cure it with a UV light for the recommended time.
-
-6. Once the glue has set, solder the button contacts to the underlying pads.
-
-   ![Soldered button](pics/15_soldered_button.jpg)
-
-⚠️ Warning: Be careful not to short-circuit button contacts to a metal shell of the XIAO board.
+建议打印两个版本，并根据您的打印能力选择最合适的一个。
 
 
-### Step 4: Solder board edges with wire
+## 2. 工具和材料
 
-1. Cut five pieces of solid-core wire, each at least 55 mm long.
+- **[烙铁](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)**
+- **[焊锡丝](https://a.co/d/62oBw1u)**
+- **[助焊剂](https://a.co/d/gNpLJZa)**
+- **[微型剪线钳](https://a.co/d/6FFrCi5)**
+- **精密镊子**
+- **工艺刀**
+- **氰基丙烯酸酯胶水（即瞬间胶）**
+- **热熔胶枪**
+- **薄双面胶带**
+- **尺子或游标卡尺**
+- **异丙醇和棉签**
+- **可选：剥线钳**
+- **可选：[UV树脂和UV灯](https://a.co/d/4x64SlM)**
+- **可选：[1/16英寸厚泡沫密封垫](https://a.co/d/awwI9Hz)**
+- **可选：[1毫米打孔器](https://a.co/d/2ZA8CoM)**
 
-2. Strip an equal amount of insulation from both ends of each wire, ensuring the unstripped length is exactly 34 mm.
+## 3. 组装步骤
 
-   ![Cut wires](pics/16_cut_wires.jpg)
+### 步骤1：准备Adafruit 5769开发板
 
-⚠️ Warning: Ensure the unstripped wire length is exactly 34 mm to fit properly in the case. Shortening or lengthening it by even 1 mm will prevent proper fitting.
+1. 识别Adafruit 5769开发板上的PicoBlade连接器。
 
-3. Cut an additional piece of wire with unstripped length of 5 mm. 
+   ![未剪切的PicoBlade](pics/1_picoblade_uncut.jpg)
 
-   ![Cut wires 2](pics/16_cut_wires_2.jpg)
+2. 使用剪线钳小心地剪掉PicoBlade连接器的顶部。
 
-4. Insert the long wires into the holes and bend the ends as shown.
+   ![剪切后的PicoBlade](pics/2_picoblade_cut.jpg)
 
-   ![Long wire placement front](pics/17_long_wire_placement_front.jpg)
-   ![Long wire placement back](pics/18_long_wire_placement_back.jpg)
+### 步骤2：将XIAO nRF52840 Sense焊接到Adafruit 5769开发板
 
-5. Insert the short wire into the 5V and 3v3 holes (as shown in the photo). Allow 1-2 mm distance between the board and the wire (as not shown in the photo). Bend the ends.
+1. 将两块开发板并排放置在干净、坚硬的表面上。下面垫一张餐巾纸以保持工作区域清洁。
 
-   ![Short wire placement](pics/18_short_wire_placement.jpg)
+2. 识别需要在两块开发板之间焊接的顶部6个引脚。
+
+   ![开发板并排放置](pics/3_boards_side-by-side.jpg)
+
+3. 在要焊接的焊盘上涂抹少量助焊剂。
+
+   ![涂抹助焊剂的开发板](pics/4_boards_flux_applied.jpg)
+
+4. 将烙铁设置到正确的温度（含铅焊锡250°C就足够了）。
+
+5. 在第一个焊盘上涂抹焊锡，每个接触点花费约3-4秒。注意不要过热开发板。
+
+   ![焊接第一个焊盘](pics/5_first_pad_soldered.jpg)
+
+💡 提示：在移动开发板之前，让焊锡凝固2-3秒。
+
+6. 检查开发板连接的平整度。如果不平整则重新焊接。否则将无法装入外壳。
+
+   ![开发板平整度](pics/6_board_flatness.jpg)
+
+7. 在焊盘2-6上涂抹焊锡，每个接触点花费约3-4秒。注意不要过热开发板。
+
+   ![所有焊盘已焊接 1](pics/7_all_pads_soldered_1.jpg)
+   ![所有焊盘已焊接 2](pics/8_all_pads_soldered_2.jpg)
+
+8. 检查焊锡是否从开发板的另一侧可见，以确保连接牢固。
+
+   ![所有焊盘另一侧](pics/9_all_pads_other_side.jpg)
+
+⚠️ 警告：小心不要触碰您正在焊接的焊盘以外的任何组件，以避免损坏开发板。
+
+💡 提示：谨慎使用助焊剂，避免让其接近麦克风孔或进入SD卡插槽。
+
+### 步骤3：安装按钮
+
+1. 如下图所示弯曲按钮触点。
+
+   ![弯曲的按钮触点 1](pics/10_bent_button_contacts_1.jpg)
+   ![弯曲的按钮触点 2](pics/11_bent_button_contacts_2.jpg)
+
+2. 在按钮底部涂抹少量氰基丙烯酸酯胶水或UV树脂。
+
+⚠️ 警告：注意不要使用过多胶水，因为过量的胶水可能会干扰按钮的功能。
+
+3. 如图所示小心地将按钮放置在开发板上。
+
+   ![按钮放置 1](pics/12_button_placed_1.jpg)
+   ![按钮放置 2](pics/13_button_placed_2.jpg)
+   ![按钮放置 3](pics/14_button_placed_3.jpg)
+
+4. 如果使用氰基丙烯酸酯胶水，对按钮施加牢固的压力，直到胶水凝固。
+
+5. 如果使用UV树脂，用UV灯按推荐时间进行固化。
+
+6. 一旦胶水凝固，将按钮触点焊接到下方的焊盘上。
+
+   ![焊接的按钮](pics/15_soldered_button.jpg)
+
+⚠️ 警告：注意不要让按钮触点与XIAO开发板的金属外壳短路。
+
+
+### 步骤4：用导线焊接开发板边缘
+
+1. 剪切五根实芯导线，每根至少55毫米长。
+
+2. 从每根导线的两端剥去相同长度的绝缘层，确保未剥离的长度正好为34毫米。
+
+   ![剪切的导线](pics/16_cut_wires.jpg)
+
+⚠️ 警告：确保未剥离的导线长度正好为34毫米，以便在外壳中正确安装。即使缩短或延长1毫米也会导致无法正确安装。
+
+3. 剪切另一根导线，未剥离长度为5毫米。
+
+   ![剪切的导线 2](pics/16_cut_wires_2.jpg)
+
+4. 将长导线插入孔中，并如图所示弯曲末端。
+
+   ![长导线放置前面](pics/17_long_wire_placement_front.jpg)
+   ![长导线放置背面](pics/18_long_wire_placement_back.jpg)
+
+5. 将短导线插入5V和3v3孔中（如照片所示）。在开发板和导线之间留出1-2毫米的距离（照片中未显示）。弯曲末端。
+
+   ![短导线放置](pics/18_short_wire_placement.jpg)
    
-6. Apply a small amount of flux to each hole you'll be soldering.
+6. 在要焊接的每个孔上涂抹少量助焊剂。
 
-7. Solder the wires from the front side. Solder each wire end, starting from the top. Hold the iron on each joint for 2-3 seconds.
+7. 从正面焊接导线。从顶部开始焊接每根导线的末端。在每个焊点上保持烙铁2-3秒。
 
-   ![Wires soldered front](pics/19_wires_soldered_front.jpg)
-   ![Wires soldered back](pics/19_wires_soldered_back.jpg)
-   ![Wires soldered side](pics/19_wires_soldered_side.jpg)
+   ![导线焊接正面](pics/19_wires_soldered_front.jpg)
+   ![导线焊接背面](pics/19_wires_soldered_back.jpg)
+   ![导线焊接侧面](pics/19_wires_soldered_side.jpg)
 
-8. Trim any excess wire flush with the board surface.
+8. 修剪任何多余的导线，使其与开发板表面齐平。
 
-   ![Trimmed wires front](pics/20_trimmed_wires_front.jpg)
-   ![Trimmed wires back](pics/20_trimmed_wires_back.jpg)
+   ![修剪的导线正面](pics/20_trimmed_wires_front.jpg)
+   ![修剪的导线背面](pics/20_trimmed_wires_back.jpg)
 
+### 步骤5：焊接扬声器
 
-### Step 5: Solder the speaker
+1. 在开发板上的扬声器连接器引脚上涂抹少量助焊剂。
 
-1. Apply a small amount of flux to the speaker connector pins on the board.
+2. 将每根扬声器导线焊接到开发板上相应的引脚。
 
-2. Solder each speaker wire to its corresponding pin on the board.
-
-   ![Soldered speaker 1](pics/21_soldered_speaker_1.jpg)
-   ![Soldered speaker 2](pics/22_soldered_speaker_2.jpg)
-
-
-### Step 6: Solder the battery
-
-1. Cut the black battery wire to a length of 33 mm, then strip 1 mm from the end.
-
-2. Cut the red battery wire to a length of 37 mm, then strip 1 mm from the end.
-
-   ![Cut battery wires](pics/23_cut_battery_wires.jpg)
-
-2. Position the battery as shown in the image, with the wires oriented correctly.
-
-3. Identify the positive (+) and negative (-) battery pads on the board.
-
-4. Apply a small amount of flux to each battery pad.
-
-5. Solder the red wire to the positive pad and the black wire to the negative pad.
-
-   ![Soldered battery](pics/24_soldered_battery.jpg)
-
-⚠️ Warning: Incorrect battery polarity can instantly damage the microcontroller. Triple-check your connections before powering on.
+   ![焊接的扬声器 1](pics/21_soldered_speaker_1.jpg)
+   ![焊接的扬声器 2](pics/22_soldered_speaker_2.jpg)
 
 
-### Step 7: Clean the board
+### 步骤6：焊接电池
 
-Gently clean all soldered areas to remove flux residue. Pay extra attention to the area around the microphone hole. Use a dry cotton swab to absorb any excess alcohol.
+1. 将黑色电池导线剪切到33毫米长，然后从末端剥离1毫米。
 
-Allow the board to air dry completely before proceeding.
+2. 将红色电池导线剪切到37毫米长，然后从末端剥离1毫米。
 
-⚠️ Warning: Be extremely gentle when cleaning near the microphone hole to avoid clogging it with debris or cotton fibers.
+   ![剪切的电池导线](pics/23_cut_battery_wires.jpg)
 
+2. 如图所示放置电池，导线方向正确。
 
-### Step 8: Assembly preparation
+3. 识别开发板上的正极（+）和负极（-）电池焊盘。
 
-1. Using double-sided tape, attach the battery as shown in the photo. Center it against the board to ensure proper fit.
+4. 在每个电池焊盘上涂抹少量助焊剂。
 
-    ![Battery taped 1](pics/25_battery_taped_1.jpg)
-    ![Battery taped 2](pics/26_battery_taped_2.jpg)
-    ![Battery taped 3](pics/27_battery_taped_3.jpg)
+5. 将红色导线焊接到正极焊盘，将黑色导线焊接到负极焊盘。
 
-2. Ensure the distance between the battery and the board does not exceed 2 mm. If it does, check if the battery wires are overlapping with the board wires. Distance larger than 2 mm will result in improper fit of the board assembly.
+   ![焊接的电池](pics/24_soldered_battery.jpg)
 
-    ![Assembly distance](pics/28_assembly_distance.jpg)
-
-3. Insert the micro SD card into the slot.
-
-    ![SD card inserted](pics/29_sd_card_inserted.jpg)
-
-4. Apply the double-sided tape to the bottom side of the battery.
-
-    ![Battery taped bottom](pics/30_battery_taped_bottom.jpg)
-
-4. Place the board assembly inside the case, starting from the side shown in the photo.
-
-    ![Case assembly](pics/31_case_assembly.jpg)
+⚠️ 警告：错误的电池极性会立即损坏微控制器。在通电前三次检查您的连接。
 
 
-### Step 9: Attach the speaker to the enclosure
+### 步骤7：清洁开发板
 
-📝 Note: There are two speaker-related chambers in this case, which need to be isolated from each other. This is done to eliminate the interference of sound waves from the two sides of the speaker, which lowers the volume and can cause distortions. The adhesive sealing rim at the front of the speaker serves as this isolation. Additionally, isolating the entire speaker unit from the other components in the case helps reduce microphone noise pollution.
+轻轻清洁所有焊接区域以去除助焊剂残留。特别注意麦克风孔周围的区域。使用干燥的棉签吸收任何多余的酒精。
 
-1. Remove the protective layer from the adhesive rim of the speaker.
+在继续之前，让开发板完全风干。
 
-    ![Speaker protective layer removed](pics/32_speaker_protective_layer_removed.jpg)
-
-2. Position the speaker inside the enclosure as shown in the image. Press it firmly for the adhesive to set. You may additionaly secure with couple of drops of cyanoacrylate glue.
-
-   ![Speaker placement](pics/33_speaker_placement.jpg)
-
-3. Tuck the speaker wires to the board.
-
-4. Apply cyanoacrylate glue to the edges of the speaker cover seating as shown.
-
-   ![Glue application](pics/34_glue_application.jpg)
-
-5. Press the speaker cover firmly into place.
-
-6. Ensure the wire inlet to the speaker compartment is completely sealed.
-
-   ![Sealed wire inlet](pics/35_sealed_wire_inlet.jpg)
+⚠️ 警告：在清洁麦克风孔附近时要极其小心，以避免用碎屑或棉纤维堵塞它。
 
 
-### Step 10: Microphone noise isolation (Optional)
+### 步骤8：组装准备
 
-📝 Note: This step can help improve audio recording quality by reducing ambient noise picked up by the microphone.
+1. 使用双面胶带，如照片所示固定电池。将其对齐开发板中心以确保正确安装。
 
-1. Cut a small piece of foam seal gasket to fit over the microphone area. Punch it with a hole punch.
+    ![电池粘贴 1](pics/25_battery_taped_1.jpg)
+    ![电池粘贴 2](pics/26_battery_taped_2.jpg)
+    ![电池粘贴 3](pics/27_battery_taped_3.jpg)
 
-    ![Cut foam seal gasket](pics/36_cut_foam_seal_gasket.jpg)
+2. 确保电池和开发板之间的距离不超过2毫米。如果超过，检查电池导线是否与开发板导线重叠。距离大于2毫米将导致开发板组件无法正确安装。
 
-2. Carefully glue the foam over the microphone area on the board.
+    ![组装距离](pics/28_assembly_distance.jpg)
 
-   ![Microphone isolation](pics/37_microphone_isolation.jpg)
+3. 将micro SD卡插入插槽。
 
-### Step 11: Assemble the device
+    ![插入的SD卡](pics/29_sd_card_inserted.jpg)
 
-1. Ensure all wires are neatly tucked in and not pinched. Ensure the board is sitting tightly inside the case, with nothing is sticking out of it.
+4. 在电池底部粘贴双面胶带。
 
-2. If using the high-tolerance top cover:
-   a. Align the cover with the bottom part.
-   b. Gently snap the cover into place, ensuring all edges are secure.
+    ![电池底部粘贴](pics/30_battery_taped_bottom.jpg)
 
-3. If using the low-tolerance top cover:
-   a. Apply small dots of hot glue sparingly around the edge of the bottom part. Focus on corners and a few points along each side.
-   b. Carefully place the top cover onto the bottom part.
-   c. Press gently and hold in place until the glue sets.
+4. 从照片所示的一侧开始，将开发板组件放入外壳内。
 
-💡 Tip: Use just enough glue to secure the cover while allowing for potential future disassembly. Aim for a balance between a secure fit and ease of reopening if needed.
+    ![外壳组装](pics/31_case_assembly.jpg)
 
-   ![Final result](pics/38_final_result.jpg)
+
+### 步骤9：将扬声器固定到外壳
+
+📝 注意：此外壳中有两个与扬声器相关的腔室，需要相互隔离。这样做是为了消除来自扬声器两侧的声波干扰，这会降低音量并可能导致失真。扬声器前部的粘合密封边缘起到隔离作用。此外，将整个扬声器单元与外壳中的其他组件隔离有助于减少麦克风噪音污染。
+
+1. 从扬声器的粘合边缘移除保护层。
+
+    ![移除扬声器保护层](pics/32_speaker_protective_layer_removed.jpg)
+
+2. 如图所示将扬声器放置在外壳内。牢固按压使粘合剂固定。您还可以用几滴氰基丙烯酸酯胶水进行额外固定。
+
+   ![扬声器放置](pics/33_speaker_placement.jpg)
+
+3. 将扬声器导线塞到开发板旁。
+
+4. 如图所示在扬声器盖座位边缘涂抹氰基丙烯酸酯胶水。
+
+   ![涂胶](pics/34_glue_application.jpg)
+
+5. 将扬声器盖牢固按压到位。
+
+6. 确保通往扬声器隔间的导线入口完全密封。
+
+   ![密封的导线入口](pics/35_sealed_wire_inlet.jpg)
+
+
+### 步骤10：麦克风噪音隔离（可选）
+
+📝 注意：此步骤可以通过减少麦克风拾取的环境噪音来帮助提高音频录制质量。
+
+1. 剪切一小块泡沫密封垫以覆盖麦克风区域。用打孔器打孔。
+
+    ![剪切的泡沫密封垫](pics/36_cut_foam_seal_gasket.jpg)
+
+2. 小心地将泡沫粘在开发板上的麦克风区域。
+
+   ![麦克风隔离](pics/37_microphone_isolation.jpg)
+
+### 步骤11：组装设备
+
+1. 确保所有导线都整齐地塞好且未被夹住。确保开发板紧密地安装在外壳内，没有任何东西伸出来。
+
+2. 如果使用高精度顶盖：
+   a. 将盖子与底部对齐。
+   b. 轻轻卡入盖子，确保所有边缘都牢固。
+
+3. 如果使用低精度顶盖：
+   a. 在底部边缘周围谨慎地涂抹小点热熔胶。重点关注角落和每侧的几个点。
+   b. 小心地将顶盖放在底部上。
+   c. 轻轻按压并保持到位，直到胶水凝固。
+
+💡 提示：使用刚好足够的胶水来固定盖子，同时允许未来可能的拆卸。在牢固安装和需要时易于重新打开之间寻求平衡。
+
+   ![最终结果](pics/38_final_result.jpg)
 
 ---
 
-## Speaker function correction for earlier models
+## 早期型号的扬声器功能修正
 
-> The 5V contact on the board, originally intended for speaker power, does not provide voltage when the device is battery-powered. In fact, there is no 5V signal available at all in battery mode. This modification creates a jumper to utilize the 3.3V supply from the board, which is sufficient to drive the speaker in all power states.
+> 开发板上的5V接触点原本用于扬声器供电，但在设备使用电池供电时不提供电压。实际上，在电池模式下根本没有5V信号。此修改创建一个跳线以利用开发板的3.3V供电，这足以在所有电源状态下驱动扬声器。
 
 
-For devices assembled before August 23, 2024, follow these steps to ensure proper speaker functionality:
+对于2024年8月23日之前组装的设备，请按照以下步骤确保扬声器功能正常：
 
-1. Remove the top cover.
-2. Extract the board assembly from the enclosure.
-3. Detach the battery from the board assembly, taking care not to damage the connections.
-4. Locate the wire closest to the USB port and cut it as shown in the image below.
+1. 移除顶盖。
+2. 从外壳中取出开发板组件。
+3. 从开发板组件上拆下电池，注意不要损坏连接。
+4. 找到最靠近USB接口的导线，并如下图所示剪断它。
 
-    ![Uncut wire near USB port](pics/99_uncut_wire_near_usb_port.jpg)
-    ![Cut wire near USB port](pics/99_cut_wire_near_usb_port.jpg)
+    ![USB接口附近未剪切的导线](pics/99_uncut_wire_near_usb_port.jpg)
+    ![USB接口附近剪断的导线](pics/99_cut_wire_near_usb_port.jpg)
 
-5. Using the cut wire, create a jumper between the designated board pads as illustrated.
+5. 使用剪断的导线，如图所示在指定的开发板焊盘之间创建一个跳线。
 
-    ![Jumper wire](pics/99_jumper_wire.jpg)
+    ![跳线](pics/99_jumper_wire.jpg)
 
-6. Solder the jumper wire securely between the 5V and 3v3 pads.
+6. 在5V和3v3焊盘之间牢固焊接跳线。
 
-    ![Soldered jumper wire](pics/99_soldered_jumper_wire.jpg)
+    ![焊接的跳线](pics/99_soldered_jumper_wire.jpg)
 
-7. Ensure that the new jumper wire does not create any short circuits with surrounding components.
-8. Reassemble the device by following Steps 8 and 11 from the main assembly instructions.
+7. 确保新的跳线不会与周围组件产生任何短路。
+8. 按照主要组装说明中的步骤8和11重新组装设备。

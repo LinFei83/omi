@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "E:/Desktop/omi/omi/firmware/devkit",
+    "nrf-connect.applications": [
+        "${workspaceFolder}\\devkit"
+    ]
+}
