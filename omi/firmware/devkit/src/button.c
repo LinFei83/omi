@@ -9,6 +9,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 #include <zephyr/sys/poweroff.h>
+#include <hal/nrf_gpio.h>
 
 #include "led.h"
 #include "mic.h"
@@ -72,9 +73,9 @@ void button_pressed_callback(const struct device *dev, struct gpio_callback *cb,
     int temp = gpio_pin_get_raw(dev, d5_pin_input.pin);
     LOG_PRINTK("button_pressed_callback %d\n", temp);
     if (temp) {
-        was_pressed = false;
+        was_pressed = true;  // 高电平=按键按下
     } else {
-        was_pressed = true;
+        was_pressed = false; // 低电平=按键释放
     }
 }
 #define BUTTON_CHECK_INTERVAL 40 // 0.04 seconds, 25 Hz
@@ -264,7 +265,6 @@ void check_button_level(struct k_work *work_item)
     }
 
     k_work_reschedule(&button_work, K_MSEC(BUTTON_CHECK_INTERVAL));
-    return 0;
 }
 
 // @deprecated
@@ -522,8 +522,19 @@ void turnoff_all()
     set_led_blue(false);
     set_led_red(false);
     set_led_green(false);
+    
+    // 移除GPIO中断回调
     gpio_remove_callback(d5_pin_input.port, &button_cb_data);
     gpio_pin_interrupt_configure_dt(&d5_pin_input, GPIO_INT_LEVEL_INACTIVE);
+
+    // 保持D4为高电平,作为按键的电源
+    // 这样按键按下时D5才能变为高电平
+    gpio_pin_set_dt(&d4_pin, 1);
+
+    // 配置D5引脚为GPIO SENSE模式,以便在SYSTEMOFF模式下唤醒
+    // D5配置为下拉模式,按键未按下时为低电平
+    // 当按键按下时,D5连接到D4的高电平,变为高电平,生成DETECT信号唤醒芯片
+    nrf_gpio_cfg_sense_input(d5_pin_input.pin, NRF_GPIO_PIN_PULLDOWN, NRF_GPIO_PIN_SENSE_HIGH);
 
     // Disable watchdog before entering system off
     int rc = watchdog_deinit();
@@ -533,6 +544,11 @@ void turnoff_all()
 
     // maybe save something here to indicate success. next time the button is pressed we should know about it
     NRF_USBD->INTENCLR = 0xFFFFFFFF;
+    
+    // 延迟以确保GPIO SENSE配置生效
+    k_msleep(10);
+    
+    // 进入系统关闭模式
     NRF_POWER->SYSTEMOFF = 1;
 }
 
