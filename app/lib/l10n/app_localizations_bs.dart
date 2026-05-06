@@ -2377,6 +2377,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get batteryLevel => 'Nivo baterije';
 
   @override
+  String get charging => 'Punjenje';
+
+  @override
   String get productUpdate => 'Ažuriranje proizvoda';
 
   @override
@@ -2503,12 +2506,6 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Prati svoje lične ciljeve na početnoj stranici';
-
-  @override
-  String get dailyReflection => 'Dnevna refleksija';
-
-  @override
-  String get get9PmReminderToReflect => 'Dobij podsjetnik u 21:00 za razmišljanje o svom danu';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Opis elementa akcije ne može biti prazan';
@@ -3927,9 +3924,6 @@ class AppLocalizationsBs extends AppLocalizations {
   String get trackPersonalGoals => 'Prati osobne ciljeve na početnoj stranici';
 
   @override
-  String get dailyReflectionDescription => 'Obavijest u 21:00 da razmislim na dan i zabilježi svoje misli.';
-
-  @override
   String get endpointURL => 'URL krajnje točke';
 
   @override
@@ -4539,12 +4533,12 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Vaš plan je završio $date.\\nPonovno se pretplatite sada - bit ćete odmah naplaćeni za novi period naplate.';
+    return 'Vaš plan je završio $date.\nPonovno se pretplatite sada - bit ćete odmah naplaćeni za novi period naplate.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Vaš plan je postavljen da se otkaže $date.\\nPonovno se pretplatite sada da zadržite svoje benefite - nema naknade do $date.';
+    return 'Vaš plan je postavljen da se otkaže $date.\nPonovno se pretplatite sada da zadržite svoje benefite - nema naknade do $date.';
   }
 
   @override
@@ -5111,11 +5105,11 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Nastavkom, svi podaci koje dijelite s ovom aplikacijom (uključujući vaše razgovore, snimke i osobne informacije) bit će sigurno pohranjeni na našim serverima kako bi vam omogućili AI-pogonjena uvida i omogućili sve značajke aplikacije.';
+      'Nastavljanjem, vaši razgovori, snimke i lični podaci bit će sigurno pohranjeni na našim serverima. Vaši audio zapisi i transkripti se obrađuju od strane AI usluga trećih strana (uključujući Deepgram za transkripciju i OpenAI za analizu) kako bi vam pružili uvide pokretane vještačkom inteligencijom i omogućili sve funkcije aplikacije.';
 
   @override
   String get tasksEmptyStateMessage =>
-      'Zadaci iz vaših razgovora će se pojaviti ovdje.\\nDodirnite + da ga kreirate ručno.';
+      'Zadaci iz vaših razgovora će se pojaviti ovdje.\nDodirnite + da ga kreirate ručno.';
 
   @override
   String get clearChatAction => 'Očisti razgovor';
@@ -5148,14 +5142,14 @@ class AppLocalizationsBs extends AppLocalizations {
   String get checkingAppleWatch => 'Provjera Apple Watch-a...';
 
   @override
-  String get installOmiOnAppleWatch => 'Instalirajte Omi na vaš\\nApple Watch';
+  String get installOmiOnAppleWatch => 'Instalirajte Omi na vaš\nApple Watch';
 
   @override
   String get installOmiOnAppleWatchDescription =>
       'Kako biste koristili Apple Watch s Omijom, trebate prvo instalirati Omi aplikaciju na svoj satnici.';
 
   @override
-  String get openOmiOnAppleWatch => 'Otvorite Omi na vaš\\nApple Watch';
+  String get openOmiOnAppleWatch => 'Otvorite Omi na vaš\nApple Watch';
 
   @override
   String get openOmiOnAppleWatchDescription =>
@@ -5409,10 +5403,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get wrappedProcessingDefault => 'Obrada u tijeku...';
 
   @override
-  String get wrappedCreatingYourStory => 'Stvaranje vaše\\n2025 priče...';
+  String get wrappedCreatingYourStory => 'Stvaranje vaše\n2025 priče...';
 
   @override
-  String get wrappedSomethingWentWrong => 'Nešto je\\npoš pošlo naopako';
+  String get wrappedSomethingWentWrong => 'Nešto je\npoš pošlo naopako';
 
   @override
   String get wrappedAnErrorOccurred => 'Došlo je do greške';
@@ -7203,12 +7197,6 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get dailyReflectionNotificationTitle => 'Vrijeme za dnevnu razmjenu';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Reči mi o tvom danu';
-
-  @override
   String get actionItemReminderTitle => 'Omi podsjetnik';
 
   @override
@@ -8325,6 +8313,12 @@ class AppLocalizationsBs extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Podešavanja telefonskih poziva';
 
   @override
+  String get showPhoneCallButtonTitle => 'Prikaži dugme za pozive';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Prikaži dugme za pozive na početnom ekranu';
+
+  @override
   String get yourVerifiedNumbers => 'Tvoji verifikovani brojevi';
 
   @override
@@ -9162,4 +9156,100 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Dosegli ste svoj mjesečni limit. Nadogradite da nastavite razgovarati s Omi bez ograničenja.';
+
+  @override
+  String get voiceResponseAudio => 'Pročitaj Omi odgovor naglas';
+
+  @override
+  String get voiceResponseMode => 'Glasovni odgovor';
+
+  @override
+  String get voiceResponseModeTitle => 'Kada izgovarati odgovore';
+
+  @override
+  String get voiceResponseOff => 'Isključeno';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Samo slušalice';
+
+  @override
+  String get voiceResponseAlways => 'Uvijek';
+
+  @override
+  String get agreeAndContinue => 'Slažem se i nastavi';
+
+  @override
+  String get startVoiceRecording => 'Pokreni glasovno snimanje';
+
+  @override
+  String get startCallRecording => 'Pokreni snimanje poziva';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Glasovni način';
+
+  @override
+  String get quickActionAskOmi => 'Pitajte Omi bilo što';
+
+  @override
+  String get record => 'Snimi';
+
+  @override
+  String get stop => 'Zaustavi';
+
+  @override
+  String get recordWithPhoneMic => 'Snimaj mikrofonom telefona';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Snimite zvuk oko vas';
+
+  @override
+  String get phoneCall => 'Telefonski poziv';
+
+  @override
+  String get phoneCallSubtitle => 'Snimajte poziv s transkripcijom uživo';
+
+  @override
+  String get searchActionItems => 'Pretraži akcione stavke';
+
+  @override
+  String get selectActionItems => 'Odaberi više';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Izvezi $count stavku/i u…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Izvoz u toku…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Izvezeno $count u $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Izvezeno $success od $total u $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Prikaži završene';
+
+  @override
+  String get hideCompletedTasks => 'Sakrij završene';
+
+  @override
+  String get selectAllTasksMenu => 'Odaberi sve';
+
+  @override
+  String get connectTaskAppToExport => 'Povežite aplikaciju za zadatke u Postavkama za izvoz';
+
+  @override
+  String get connectAction => 'Poveži';
+
+  @override
+  String get deselectAllTasksMenu => 'Poništi odabir svih';
 }

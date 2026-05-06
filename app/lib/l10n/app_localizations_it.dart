@@ -2378,6 +2378,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get batteryLevel => 'Livello batteria';
 
   @override
+  String get charging => 'In carica';
+
+  @override
   String get productUpdate => 'Aggiornamento prodotto';
 
   @override
@@ -2504,12 +2507,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Monitora i tuoi obiettivi personali nella homepage';
-
-  @override
-  String get dailyReflection => 'Riflessione giornaliera';
-
-  @override
-  String get get9PmReminderToReflect => 'Ricevi un promemoria alle 21:00 per riflettere sulla tua giornata';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'La descrizione dell\'elemento di azione non può essere vuota';
@@ -3937,10 +3934,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get trackPersonalGoals => 'Tieni traccia degli obiettivi personali sulla homepage';
 
   @override
-  String get dailyReflectionDescription =>
-      'Ricevi un promemoria alle 21:00 per riflettere sulla tua giornata e catturare i tuoi pensieri.';
-
-  @override
   String get endpointURL => 'URL dell\'Endpoint';
 
   @override
@@ -4557,12 +4550,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Il tuo piano è terminato il $date.\\nRiabbonati ora - ti verrà addebitato immediatamente per un nuovo periodo di fatturazione.';
+    return 'Il tuo piano è terminato il $date.\nRiabbonati ora - ti verrà addebitato immediatamente per un nuovo periodo di fatturazione.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Il tuo piano è impostato per essere annullato il $date.\\nRiabbonati ora per mantenere i tuoi benefici - nessun addebito fino al $date.';
+    return 'Il tuo piano è impostato per essere annullato il $date.\nRiabbonati ora per mantenere i tuoi benefici - nessun addebito fino al $date.';
   }
 
   @override
@@ -5130,7 +5123,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Continuando, tutti i dati che condividi con questa app (incluse le tue conversazioni, registrazioni e informazioni personali) verranno archiviati in modo sicuro sui nostri server per fornirti approfondimenti basati sull\'IA e abilitare tutte le funzionalità dell\'app.';
+      'Continuando, le tue conversazioni, registrazioni e informazioni personali saranno archiviate in modo sicuro sui nostri server. Le tue registrazioni audio e trascrizioni vengono elaborate da servizi AI di terze parti (inclusi Deepgram per la trascrizione e OpenAI per l\'analisi) per fornirti approfondimenti basati sull\'AI e abilitare tutte le funzionalità dell\'app.';
 
   @override
   String get tasksEmptyStateMessage =>
@@ -6585,7 +6578,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'Impostare $appName come app di riepilogo predefinita?\\n\\nQuesta app verrà utilizzata automaticamente per tutti i futuri riepiloghi delle conversazioni.';
+    return 'Impostare $appName come app di riepilogo predefinita?\n\nQuesta app verrà utilizzata automaticamente per tutti i futuri riepiloghi delle conversazioni.';
   }
 
   @override
@@ -7224,12 +7217,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count conversazioni sono state unite con successo';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'È ora della riflessione quotidiana';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Raccontami della tua giornata';
 
   @override
   String get actionItemReminderTitle => 'Promemoria Omi';
@@ -8354,6 +8341,12 @@ class AppLocalizationsIt extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Impostazioni chiamate';
 
   @override
+  String get showPhoneCallButtonTitle => 'Mostra pulsante chiamata';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Mostra il pulsante di chiamata telefonica nella schermata principale';
+
+  @override
   String get yourVerifiedNumbers => 'I tuoi numeri verificati';
 
   @override
@@ -9194,4 +9187,100 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Hai raggiunto il tuo limite mensile. Aggiorna per continuare a chattare con Omi senza restrizioni.';
+
+  @override
+  String get voiceResponseAudio => 'Leggi la risposta di Omi ad alta voce';
+
+  @override
+  String get voiceResponseMode => 'Risposta vocale';
+
+  @override
+  String get voiceResponseModeTitle => 'Quando leggere le risposte';
+
+  @override
+  String get voiceResponseOff => 'Off';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Solo cuffie';
+
+  @override
+  String get voiceResponseAlways => 'Sempre';
+
+  @override
+  String get agreeAndContinue => 'Accetta e continua';
+
+  @override
+  String get startVoiceRecording => 'Avvia registrazione vocale';
+
+  @override
+  String get startCallRecording => 'Avvia registrazione chiamata';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Modalità vocale';
+
+  @override
+  String get quickActionAskOmi => 'Chiedi qualsiasi cosa a Omi';
+
+  @override
+  String get record => 'Registra';
+
+  @override
+  String get stop => 'Ferma';
+
+  @override
+  String get recordWithPhoneMic => 'Registra con il microfono del telefono';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Cattura l\'audio intorno a te';
+
+  @override
+  String get phoneCall => 'Chiamata';
+
+  @override
+  String get phoneCallSubtitle => 'Registra una chiamata con trascrizione live';
+
+  @override
+  String get searchActionItems => 'Cerca azioni';
+
+  @override
+  String get selectActionItems => 'Selezione multipla';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Esporta $count elemento/i su…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Esportazione…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Esportati $count su $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Esportati $success di $total su $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Mostra completate';
+
+  @override
+  String get hideCompletedTasks => 'Nascondi completate';
+
+  @override
+  String get selectAllTasksMenu => 'Seleziona tutto';
+
+  @override
+  String get connectTaskAppToExport => 'Collega un\'app attività nelle Impostazioni per esportare';
+
+  @override
+  String get connectAction => 'Connetti';
+
+  @override
+  String get deselectAllTasksMenu => 'Deseleziona tutto';
 }

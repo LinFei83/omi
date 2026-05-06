@@ -2376,6 +2376,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get batteryLevel => 'Batterijniveau';
 
   @override
+  String get charging => 'Opladen';
+
+  @override
   String get productUpdate => 'Productupdate';
 
   @override
@@ -2502,12 +2505,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Volg je persoonlijke doelen op de startpagina';
-
-  @override
-  String get dailyReflection => 'Dagelijkse reflectie';
-
-  @override
-  String get get9PmReminderToReflect => 'Ontvang om 21:00 uur een herinnering om te reflecteren op je dag';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Actiepuntomschrijving mag niet leeg zijn';
@@ -3930,10 +3927,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get trackPersonalGoals => 'Persoonlijke doelen volgen op de homepage';
 
   @override
-  String get dailyReflectionDescription =>
-      'Ontvang om 21:00 een herinnering om te reflecteren op je dag en je gedachten vast te leggen.';
-
-  @override
   String get endpointURL => 'Eindpunt-URL';
 
   @override
@@ -4544,12 +4537,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Uw plan eindigde op $date.\\nAbonneer nu opnieuw - u wordt direct belast voor een nieuwe factureringsperiode.';
+    return 'Uw plan eindigde op $date.\nAbonneer nu opnieuw - u wordt direct belast voor een nieuwe factureringsperiode.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Uw plan wordt geannuleerd op $date.\\nAbonneer nu opnieuw om uw voordelen te behouden - geen kosten tot $date.';
+    return 'Uw plan wordt geannuleerd op $date.\nAbonneer nu opnieuw om uw voordelen te behouden - geen kosten tot $date.';
   }
 
   @override
@@ -5114,7 +5107,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Door verder te gaan, worden alle gegevens die je deelt met deze app (inclusief je gesprekken, opnames en persoonlijke informatie) veilig opgeslagen op onze servers om je AI-aangedreven inzichten te bieden en alle app-functies mogelijk te maken.';
+      'Door verder te gaan worden uw gesprekken, opnames en persoonlijke informatie veilig opgeslagen op onze servers. Uw audio-opnames en transcripties worden verwerkt door AI-diensten van derden (waaronder Deepgram voor transcriptie en OpenAI voor analyse) om u AI-gestuurde inzichten te bieden en alle app-functies mogelijk te maken.';
 
   @override
   String get tasksEmptyStateMessage =>
@@ -6566,7 +6559,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return '$appName instellen als je standaard samenvattingsapp?\\n\\nDeze app wordt automatisch gebruikt voor alle toekomstige gesprekssamenvattingen.';
+    return '$appName instellen als je standaard samenvattingsapp?\n\nDeze app wordt automatisch gebruikt voor alle toekomstige gesprekssamenvattingen.';
   }
 
   @override
@@ -7203,12 +7196,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count gesprekken zijn succesvol samengevoegd';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Tijd voor dagelijkse reflectie';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Vertel me over je dag';
 
   @override
   String get actionItemReminderTitle => 'Omi-herinnering';
@@ -8330,6 +8317,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Gespreksinstellingen';
 
   @override
+  String get showPhoneCallButtonTitle => 'Toon belknop';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Toon de telefoonbelknop op het startscherm';
+
+  @override
   String get yourVerifiedNumbers => 'Uw geverifieerde nummers';
 
   @override
@@ -9167,4 +9160,100 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Je hebt je maandelijkse limiet bereikt. Upgrade om zonder beperkingen met Omi te blijven chatten.';
+
+  @override
+  String get voiceResponseAudio => 'Lees Omi\'s antwoord voor';
+
+  @override
+  String get voiceResponseMode => 'Spraakantwoord';
+
+  @override
+  String get voiceResponseModeTitle => 'Wanneer antwoorden worden voorgelezen';
+
+  @override
+  String get voiceResponseOff => 'Uit';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Alleen koptelefoon';
+
+  @override
+  String get voiceResponseAlways => 'Altijd';
+
+  @override
+  String get agreeAndContinue => 'Akkoord en doorgaan';
+
+  @override
+  String get startVoiceRecording => 'Spraakopname starten';
+
+  @override
+  String get startCallRecording => 'Gespreksopname starten';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Spraakmodus';
+
+  @override
+  String get quickActionAskOmi => 'Vraag Omi van alles';
+
+  @override
+  String get record => 'Opnemen';
+
+  @override
+  String get stop => 'Stop';
+
+  @override
+  String get recordWithPhoneMic => 'Opnemen met telefoonmicrofoon';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Leg het geluid om je heen vast';
+
+  @override
+  String get phoneCall => 'Telefoongesprek';
+
+  @override
+  String get phoneCallSubtitle => 'Neem een gesprek op met live transcriptie';
+
+  @override
+  String get searchActionItems => 'Actiepunten zoeken';
+
+  @override
+  String get selectActionItems => 'Meerdere selecteren';
+
+  @override
+  String chooseExportDestination(int count) {
+    return '$count item(s) exporteren naar…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Exporteren…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return '$count geëxporteerd naar $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return '$success van $total geëxporteerd naar $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Voltooide tonen';
+
+  @override
+  String get hideCompletedTasks => 'Voltooide verbergen';
+
+  @override
+  String get selectAllTasksMenu => 'Alles selecteren';
+
+  @override
+  String get connectTaskAppToExport => 'Verbind een taken-app in Instellingen om te exporteren';
+
+  @override
+  String get connectAction => 'Verbinden';
+
+  @override
+  String get deselectAllTasksMenu => 'Alles deselecteren';
 }

@@ -2375,6 +2375,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get batteryLevel => 'Pil Seviyesi';
 
   @override
+  String get charging => 'Şarj oluyor';
+
+  @override
   String get productUpdate => 'Ürün Güncellemesi';
 
   @override
@@ -2501,12 +2504,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Ana sayfada kişisel hedeflerinizi takip edin';
-
-  @override
-  String get dailyReflection => 'Günlük Düşünce';
-
-  @override
-  String get get9PmReminderToReflect => 'Gününüzü değerlendirmek için saat 21:00 hatırlatıcısı alın';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Eylem öğesi açıklaması boş olamaz';
@@ -3926,10 +3923,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get trackPersonalGoals => 'Ana sayfada kişisel hedefleri izleyin';
 
   @override
-  String get dailyReflectionDescription =>
-      'Gününüzü değerlendirmek ve düşüncelerinizi kaydetmek için saat 21:00\'da hatırlatıcı alın.';
-
-  @override
   String get endpointURL => 'Uç Nokta URL\'si';
 
   @override
@@ -4539,12 +4532,12 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Planınız $date tarihinde sona erdi.\\nŞimdi yeniden abone olun - yeni fatura dönemi için hemen ücretlendirileceksiniz.';
+    return 'Planınız $date tarihinde sona erdi.\nŞimdi yeniden abone olun - yeni fatura dönemi için hemen ücretlendirileceksiniz.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Planınız $date tarihinde iptal edilecek şekilde ayarlandı.\\nAvantajlarınızı korumak için şimdi yeniden abone olun - $date tarihine kadar ücret yok.';
+    return 'Planınız $date tarihinde iptal edilecek şekilde ayarlandı.\nAvantajlarınızı korumak için şimdi yeniden abone olun - $date tarihine kadar ücret yok.';
   }
 
   @override
@@ -5109,7 +5102,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Devam ederek, bu uygulamayla paylaştığınız tüm veriler (konuşmalarınız, kayıtlarınız ve kişisel bilgileriniz dahil) size yapay zeka destekli içgörüler sağlamak ve tüm uygulama özelliklerini etkinleştirmek için sunucularımızda güvenli bir şekilde saklanacaktır.';
+      'Devam ederek, konuşmalarınız, kayıtlarınız ve kişisel bilgileriniz sunucularımızda güvenli bir şekilde saklanacaktır. Ses kayıtlarınız ve transkriptleriniz, size yapay zeka destekli içgörüler sağlamak ve tüm uygulama özelliklerini etkinleştirmek için üçüncü taraf yapay zeka hizmetleri (transkripsiyon için Deepgram ve analiz için OpenAI dahil) tarafından işlenir.';
 
   @override
   String get tasksEmptyStateMessage =>
@@ -6557,7 +6550,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return '$appName varsayılan özet uygulamanız olarak ayarlansın mı?\\n\\nBu uygulama gelecekteki tüm konuşma özetleri için otomatik olarak kullanılacaktır.';
+    return '$appName varsayılan özet uygulamanız olarak ayarlansın mı?\n\nBu uygulama gelecekteki tüm konuşma özetleri için otomatik olarak kullanılacaktır.';
   }
 
   @override
@@ -7192,12 +7185,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count konuşma başarıyla birleştirildi';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Günlük düşünce zamanı';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Bana gününü anlat';
 
   @override
   String get actionItemReminderTitle => 'Omi Hatırlatıcı';
@@ -8316,6 +8303,12 @@ class AppLocalizationsTr extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Arama ayarlari';
 
   @override
+  String get showPhoneCallButtonTitle => 'Arama Düğmesini Göster';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Ana ekranda telefon arama düğmesini göster';
+
+  @override
   String get yourVerifiedNumbers => 'Dogrulanmis numaralariniz';
 
   @override
@@ -9152,4 +9145,100 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Aylık limitinize ulaştınız. Kısıtlama olmadan Omi ile sohbete devam etmek için yükseltin.';
+
+  @override
+  String get voiceResponseAudio => 'Omi yanıtını sesli oku';
+
+  @override
+  String get voiceResponseMode => 'Sesli yanıt';
+
+  @override
+  String get voiceResponseModeTitle => 'Yanıtlar ne zaman okunsun';
+
+  @override
+  String get voiceResponseOff => 'Kapalı';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Sadece kulaklık';
+
+  @override
+  String get voiceResponseAlways => 'Her zaman';
+
+  @override
+  String get agreeAndContinue => 'Kabul Et ve Devam Et';
+
+  @override
+  String get startVoiceRecording => 'Ses kaydını başlat';
+
+  @override
+  String get startCallRecording => 'Arama kaydını başlat';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Ses Modu';
+
+  @override
+  String get quickActionAskOmi => 'Omi\'ye her şeyi sorun';
+
+  @override
+  String get record => 'Kaydet';
+
+  @override
+  String get stop => 'Durdur';
+
+  @override
+  String get recordWithPhoneMic => 'Telefon mikrofonuyla kaydet';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Etrafınızdaki sesi yakalayın';
+
+  @override
+  String get phoneCall => 'Telefon araması';
+
+  @override
+  String get phoneCallSubtitle => 'Canlı transkripsiyonla bir aramayı kaydedin';
+
+  @override
+  String get searchActionItems => 'Eylem öğelerini ara';
+
+  @override
+  String get selectActionItems => 'Birden fazla seç';
+
+  @override
+  String chooseExportDestination(int count) {
+    return '$count öğeyi dışa aktar…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Dışa aktarılıyor…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return '$count öğe $platform uygulamasına aktarıldı';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return '$total öğeden $success tanesi $platform uygulamasına aktarıldı';
+  }
+
+  @override
+  String get showCompletedTasks => 'Tamamlananları göster';
+
+  @override
+  String get hideCompletedTasks => 'Tamamlananları gizle';
+
+  @override
+  String get selectAllTasksMenu => 'Tümünü seç';
+
+  @override
+  String get connectTaskAppToExport => 'Dışa aktarmak için Ayarlar\'da bir görev uygulaması bağlayın';
+
+  @override
+  String get connectAction => 'Bağla';
+
+  @override
+  String get deselectAllTasksMenu => 'Tümünün seçimini kaldır';
 }

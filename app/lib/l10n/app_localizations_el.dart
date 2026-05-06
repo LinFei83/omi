@@ -2387,6 +2387,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get batteryLevel => 'Επίπεδο μπαταρίας';
 
   @override
+  String get charging => 'Φόρτιση';
+
+  @override
   String get productUpdate => 'Ενημέρωση προϊόντος';
 
   @override
@@ -2513,12 +2516,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Παρακολουθήστε τους προσωπικούς σας στόχους στην αρχική σελίδα';
-
-  @override
-  String get dailyReflection => 'Ημερήσιος αναστοχασμός';
-
-  @override
-  String get get9PmReminderToReflect => 'Λάβετε υπενθύμιση στις 9 μ.μ. για να αναλογιστείτε την ημέρα σας';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Η περιγραφή του στοιχείου ενέργειας δεν μπορεί να είναι κενή';
@@ -3947,10 +3944,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get trackPersonalGoals => 'Παρακολουθήστε προσωπικούς στόχους στην αρχική σελίδα';
 
   @override
-  String get dailyReflectionDescription =>
-      'Λάβετε μια υπενθύμιση στις 9 μ.μ. για να αναστοχαστείτε την ημέρα σας και να καταγράψετε τις σκέψεις σας.';
-
-  @override
   String get endpointURL => 'URL τελικού σημείου';
 
   @override
@@ -4566,12 +4559,12 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Το πρόγραμμά σας έληξε στις $date.\\nΕπανεγγραφείτε τώρα - θα χρεωθείτε αμέσως για μια νέα περίοδο χρέωσης.';
+    return 'Το πρόγραμμά σας έληξε στις $date.\nΕπανεγγραφείτε τώρα - θα χρεωθείτε αμέσως για μια νέα περίοδο χρέωσης.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Το πρόγραμμά σας έχει ρυθμιστεί να ακυρωθεί στις $date.\\nΕπανεγγραφείτε τώρα για να διατηρήσετε τα οφέλη σας - χωρίς χρέωση μέχρι $date.';
+    return 'Το πρόγραμμά σας έχει ρυθμιστεί να ακυρωθεί στις $date.\nΕπανεγγραφείτε τώρα για να διατηρήσετε τα οφέλη σας - χωρίς χρέωση μέχρι $date.';
   }
 
   @override
@@ -5140,7 +5133,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Συνεχίζοντας, όλα τα δεδομένα που μοιράζεστε με αυτήν την εφαρμογή (συμπεριλαμβανομένων των συνομιλιών, των εγγραφών και των προσωπικών σας πληροφοριών) θα αποθηκεύονται με ασφάλεια στους διακομιστές μας για να σας παρέχουμε πληροφορίες με τεχνητή νοημοσύνη και να ενεργοποιήσουμε όλες τις λειτουργίες της εφαρμογής.';
+      'Συνεχίζοντας, οι συνομιλίες, οι εγγραφές και τα προσωπικά σας στοιχεία θα αποθηκευτούν με ασφάλεια στους διακομιστές μας. Οι ηχογραφήσεις και τα μεταγραφές σας επεξεργάζονται από υπηρεσίες τεχνητής νοημοσύνης τρίτων (συμπεριλαμβανομένων των Deepgram για μεταγραφή και OpenAI για ανάλυση) για να σας παρέχουν γνώσεις βασισμένες σε AI και να ενεργοποιήσουν όλες τις λειτουργίες της εφαρμογής.';
 
   @override
   String get tasksEmptyStateMessage =>
@@ -6592,7 +6585,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'Να οριστεί το $appName ως προεπιλεγμένη εφαρμογή σύνοψης;\\n\\nΑυτή η εφαρμογή θα χρησιμοποιείται αυτόματα για όλες τις μελλοντικές συνόψεις συνομιλιών.';
+    return 'Να οριστεί το $appName ως προεπιλεγμένη εφαρμογή σύνοψης;\n\nΑυτή η εφαρμογή θα χρησιμοποιείται αυτόματα για όλες τις μελλοντικές συνόψεις συνομιλιών.';
   }
 
   @override
@@ -7231,12 +7224,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count συνομιλίες συγχωνεύθηκαν επιτυχώς';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Ώρα για ημερήσιο αναστοχασμό';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Πες μου για την ημέρα σου';
 
   @override
   String get actionItemReminderTitle => 'Υπενθύμιση Omi';
@@ -8365,6 +8352,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Ρυθμίσεις κλήσεων';
 
   @override
+  String get showPhoneCallButtonTitle => 'Εμφάνιση κουμπιού κλήσης';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Εμφάνιση κουμπιού τηλεφωνικής κλήσης στην αρχική οθόνη';
+
+  @override
   String get yourVerifiedNumbers => 'Οι επαληθευμένοι αριθμοί σας';
 
   @override
@@ -9204,4 +9197,100 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Φτάσατε το μηνιαίο σας όριο. Αναβαθμίστε για να συνεχίσετε να συνομιλείτε με το Omi χωρίς περιορισμούς.';
+
+  @override
+  String get voiceResponseAudio => 'Ανάγνωση απάντησης Omi φωναχτά';
+
+  @override
+  String get voiceResponseMode => 'Φωνητική απάντηση';
+
+  @override
+  String get voiceResponseModeTitle => 'Πότε να εκφωνούνται οι απαντήσεις';
+
+  @override
+  String get voiceResponseOff => 'Απενεργ.';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Μόνο ακουστικά';
+
+  @override
+  String get voiceResponseAlways => 'Πάντα';
+
+  @override
+  String get agreeAndContinue => 'Συμφωνώ και Συνέχεια';
+
+  @override
+  String get startVoiceRecording => 'Έναρξη ηχογράφησης';
+
+  @override
+  String get startCallRecording => 'Έναρξη εγγραφής κλήσης';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Λειτουργία φωνής';
+
+  @override
+  String get quickActionAskOmi => 'Ρωτήστε τον Omi οτιδήποτε';
+
+  @override
+  String get record => 'Εγγραφή';
+
+  @override
+  String get stop => 'Διακοπή';
+
+  @override
+  String get recordWithPhoneMic => 'Εγγραφή με μικρόφωνο τηλεφώνου';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Καταγράψτε ήχο γύρω σας';
+
+  @override
+  String get phoneCall => 'Τηλεφωνική κλήση';
+
+  @override
+  String get phoneCallSubtitle => 'Καταγράψτε κλήση με ζωντανή μεταγραφή';
+
+  @override
+  String get searchActionItems => 'Αναζήτηση ενεργειών';
+
+  @override
+  String get selectActionItems => 'Πολλαπλή επιλογή';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Εξαγωγή $count στοιχείου/ων σε…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Εξαγωγή…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Εξήχθησαν $count στο $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Εξήχθησαν $success από $total στο $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Εμφάνιση ολοκληρωμένων';
+
+  @override
+  String get hideCompletedTasks => 'Απόκρυψη ολοκληρωμένων';
+
+  @override
+  String get selectAllTasksMenu => 'Επιλογή όλων';
+
+  @override
+  String get connectTaskAppToExport => 'Συνδέστε μια εφαρμογή εργασιών στις Ρυθμίσεις για εξαγωγή';
+
+  @override
+  String get connectAction => 'Σύνδεση';
+
+  @override
+  String get deselectAllTasksMenu => 'Αποεπιλογή όλων';
 }

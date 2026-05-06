@@ -2512,6 +2512,7 @@
         }
     },
     "batteryLevel": "Raven baterije",
+    "charging": "Polnjenje",
     "@batteryLevel": {
         "description": "Battery level label"
     },
@@ -2778,14 +2779,6 @@
     "trackPersonalGoalsOnHomepage": "Sledite svojim osebnim ciljem na domači strani",
     "@trackPersonalGoalsOnHomepage": {
         "description": "Description for goal tracker"
-    },
-    "dailyReflection": "Dnevna razmislek",
-    "@dailyReflection": {
-        "description": "Section header for daily reflection settings"
-    },
-    "get9PmReminderToReflect": "Prejmi opomnik ob 21. uri, da razmisliš o svojem dnevu",
-    "@get9PmReminderToReflect": {
-        "description": "Description for daily reflection"
     },
     "actionItemDescriptionCannotBeEmpty": "Opis akcijske točke ne sme biti prazen",
     "@actionItemDescriptionCannotBeEmpty": {
@@ -4421,7 +4414,6 @@
     "noAPIKeys": "Nobenih ključev API. Ustvarite enega, da bi se začeli.",
     "autoCreateWhenDetected": "Samodejna ustvaritev pri zaznavi imena",
     "trackPersonalGoals": "Sledite osebnim ciljem na domači strani",
-    "dailyReflectionDescription": "Dobite opomnik ob 21:00, da se porazmislite o svojem dnevu in zajamete svoje misli.",
     "endpointURL": "Končna točka URL",
     "links": "Povezave",
     "discordMemberCount": "8000+ članov na Discordu",
@@ -5263,7 +5255,7 @@
     "@yourOmiUnleashed": {
         "description": "Marketing text for unlimited plan"
     },
-    "planEndedOn": "Vaš načrt se je končal {date}.\\nPrekvalificira se sedaj - obračunani boste takoj za novo obračunsko obdobje.",
+    "planEndedOn": "Vaš načrt se je končal {date}.\nPrekvalificira se sedaj - obračunani boste takoj za novo obračunsko obdobje.",
     "@planEndedOn": {
         "description": "Message when plan has ended",
         "placeholders": {
@@ -5273,7 +5265,7 @@
             }
         }
     },
-    "planSetToCancelOn": "Vaš načrt je nastavljen na preklic {date}.\\nPrekvalificira se sedaj, da obdržite prednosti - brez napolnitve do {date}.",
+    "planSetToCancelOn": "Vaš načrt je nastavljen na preklic {date}.\nPrekvalificira se sedaj, da obdržite prednosti - brez napolnitve do {date}.",
     "@planSetToCancelOn": {
         "description": "Message when plan is set to cancel",
         "placeholders": {
@@ -6042,11 +6034,11 @@
     "@additionalSpeechSampleRemoved": {
         "description": "Confirmation message when an additional speech sample is deleted"
     },
-    "consentDataMessage": "S nadaljevanjem bodo vsi podatki, ki jih delite s to aplikacijo (vključno s pogovori, posnetki in osebnimi informacijami), varno shranjeni na naših strežnikih, da vam zagotovimo umetnostno inteligenco in omogočimo vse funkcije aplikacije.",
+    "consentDataMessage": "Z nadaljevanjem bodo vaši pogovori, posnetki in osebni podatki varno shranjeni na naših strežnikih. Vaši zvočni posnetki in prepisi se obdelujejo s storitvami umetne inteligence tretjih oseb (vključno z Deepgram za prepis in OpenAI za analizo), da vam zagotovimo vpoglede, ki jih poganja umetna inteligenca, in omogočimo vse funkcije aplikacije.",
     "@consentDataMessage": {
         "description": "Consent message explaining how user data will be stored and used"
     },
-    "tasksEmptyStateMessage": "Naloge iz vaših pogovorov se bodo prikazale tukaj.\\nTapnite + za ročno ustvarjanje.",
+    "tasksEmptyStateMessage": "Naloge iz vaših pogovorov se bodo prikazale tukaj.\nTapnite + za ročno ustvarjanje.",
     "@tasksEmptyStateMessage": {
         "description": "Empty state message shown when there are no tasks, with instruction to tap + button"
     },
@@ -6090,7 +6082,7 @@
     "@checkingAppleWatch": {
         "description": "Loading text while checking Apple Watch status"
     },
-    "installOmiOnAppleWatch": "Namestite Omi na vaš\\nApple Watch",
+    "installOmiOnAppleWatch": "Namestite Omi na vaš\nApple Watch",
     "@installOmiOnAppleWatch": {
         "description": "Title prompting user to install Omi on Apple Watch"
     },
@@ -6098,7 +6090,7 @@
     "@installOmiOnAppleWatchDescription": {
         "description": "Description explaining need to install Omi app on watch"
     },
-    "openOmiOnAppleWatch": "Odprite Omi na vašem\\nApple Watch",
+    "openOmiOnAppleWatch": "Odprite Omi na vašem\nApple Watch",
     "@openOmiOnAppleWatch": {
         "description": "Title prompting user to open Omi on Apple Watch"
     },
@@ -6465,11 +6457,11 @@
     "@wrappedProcessingDefault": {
         "description": "Default processing status text"
     },
-    "wrappedCreatingYourStory": "Ustvarjanje vaše\\n2025 zgodbe...",
+    "wrappedCreatingYourStory": "Ustvarjanje vaše\n2025 zgodbe...",
     "@wrappedCreatingYourStory": {
         "description": "Text shown while generating the wrapped, includes newline"
     },
-    "wrappedSomethingWentWrong": "Nekaj\\nje šlo narobe",
+    "wrappedSomethingWentWrong": "Nekaj\nje šlo narobe",
     "@wrappedSomethingWentWrong": {
         "description": "Error header text, includes newline"
     },
@@ -6840,9 +6832,6 @@
     "notificationFrequencyDescription": "Kontrolirajte, kako pogosto Omi pošilja proaktivna obvestila in opomniki.",
     "@notificationFrequencyDescription": {
         "description": "Description text for notification frequency section"
-    },
-    "@dailyReflectionDescription": {
-        "description": "Description text for daily reflection section"
     },
     "sliderOff": "Izključeno",
     "@sliderOff": {
@@ -8009,7 +7998,7 @@
     "defaultLabel": "Privzeto",
     "lastUsedLabel": "Zadnja uporaba",
     "setDefaultApp": "Nastavite privzeto aplikacijo",
-    "setDefaultAppContent": "Nastavite {appName} kot privzeto aplikacijo za povzemanje?\\n\\nTa aplikacija bo samodejno uporabljena za vse prihodnje povzetke pogovorov.",
+    "setDefaultAppContent": "Nastavite {appName} kot privzeto aplikacijo za povzemanje?\n\nTa aplikacija bo samodejno uporabljena za vse prihodnje povzetke pogovorov.",
     "@setDefaultAppContent": {
         "placeholders": {
             "appName": {
@@ -8898,14 +8887,6 @@
                 "example": "3"
             }
         }
-    },
-    "dailyReflectionNotificationTitle": "Čas za Dnevni Razmislek",
-    "@dailyReflectionNotificationTitle": {
-        "description": "Title for the daily reflection notification shown at 9 PM"
-    },
-    "dailyReflectionNotificationBody": "Povejte mi o vaš dan",
-    "@dailyReflectionNotificationBody": {
-        "description": "Body text for the daily reflection notification"
     },
     "actionItemReminderTitle": "Opomnik Omi",
     "@actionItemReminderTitle": {
@@ -10015,6 +9996,8 @@
     "phoneSpeaker": "Zvočnik",
     "phoneEndCall": "Konec",
     "phoneCallSettingsTitle": "Nastavitve telefonskih klicev",
+    "showPhoneCallButtonTitle": "Pokaži gumb za klic",
+    "showPhoneCallButtonDesc": "Prikaži gumb za telefonski klic na domačem zaslonu",
     "yourVerifiedNumbers": "Tvoje preverjene številke",
     "verifiedNumbersDescription": "Ko nekoga pokličeš, bo videl to številko na svojem telefonu",
     "noVerifiedNumbers": "Nima preverjenih številk",
@@ -10705,5 +10688,38 @@
     "batteryHistory": "Baterija",
     "day": "Dan",
     "noBatteryDataYet": "Še ni podatkov o bateriji",
-    "week": "Teden"
+    "week": "Teden",
+    "voiceResponseAudio": "Preberi odgovor Omi na glas",
+    "voiceResponseMode": "Glasovni odgovor",
+    "voiceResponseModeTitle": "Kdaj prebrati odgovore",
+    "voiceResponseOff": "Izklop",
+    "voiceResponseHeadphonesOnly": "Samo slušalke",
+    "voiceResponseAlways": "Vedno",
+    "agreeAndContinue": "Strinjam se in nadaljuj",
+    "mindMap": "Mind Map",
+    "@mindMap": {
+        "description": "Section header for memory knowledge graph on home page"
+    },
+    "voiceMode": "Glasovni način",
+    "quickActionAskOmi": "Vprašajte Omi karkoli",
+    "record": "Posnemi",
+    "stop": "Ustavi",
+    "recordWithPhoneMic": "Snemaj s telefonskim mikrofonom",
+    "recordWithPhoneMicSubtitle": "Posnemite zvok okoli sebe",
+    "phoneCall": "Telefonski klic",
+    "phoneCallSubtitle": "Posnemite klic s prepisom v živo",
+    "bulkExportInProgress": "Izvažanje…",
+    "bulkExportPartial": "Izvoženo {success} od {total} v {platform}",
+    "bulkExportSuccess": "Izvoženo {count} v {platform}",
+    "chooseExportDestination": "Izvozi {count} element(ov) v…",
+    "connectAction": "Poveži",
+    "connectTaskAppToExport": "Povežite aplikacijo za naloge v Nastavitvah za izvoz",
+    "deselectAllTasksMenu": "Prekliči izbor vseh",
+    "hideCompletedTasks": "Skrij dokončane",
+    "searchActionItems": "Iskanje akcijskih elementov",
+    "selectActionItems": "Izberi več",
+    "selectAllTasksMenu": "Izberi vse",
+    "showCompletedTasks": "Prikaži dokončane",
+    "startCallRecording": "Začni snemanje klica",
+    "startVoiceRecording": "Začni glasovno snemanje"
 }

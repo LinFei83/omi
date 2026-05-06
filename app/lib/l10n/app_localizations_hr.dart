@@ -2378,6 +2378,9 @@ class AppLocalizationsHr extends AppLocalizations {
   String get batteryLevel => 'Razina baterije';
 
   @override
+  String get charging => 'Punjenje';
+
+  @override
   String get productUpdate => 'Ažuriranje proizvoda';
 
   @override
@@ -2504,12 +2507,6 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Prati svoje osobne ciljeve na početnoj stranici';
-
-  @override
-  String get dailyReflection => 'Dnevna refleksija';
-
-  @override
-  String get get9PmReminderToReflect => 'Dobij podsjetnik u 21:00 kako bi se reflektirao na svoj dan';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Opis stavke aktivnosti ne može biti prazan';
@@ -3932,10 +3929,6 @@ class AppLocalizationsHr extends AppLocalizations {
   String get trackPersonalGoals => 'Pratite osobne ciljeve na početnoj stranici';
 
   @override
-  String get dailyReflectionDescription =>
-      'Dobijte podsjetnik u 21:00 kako bi razmislili o vašem danu i zabilježili svoje misli.';
-
-  @override
   String get endpointURL => 'URL krajnje točke';
 
   @override
@@ -4547,12 +4540,12 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Vaš plan je završio $date.\\nPrenazovite se sada - bit će vam odmah naplaćeno novo razdoblje naplate.';
+    return 'Vaš plan je završio $date.\nPrenazovite se sada - bit će vam odmah naplaćeno novo razdoblje naplate.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Vaš plan je postavljen da se otkaže $date.\\nPrenazovite se sada kako biste zadržali svoju korist - bez naplate do $date.';
+    return 'Vaš plan je postavljen da se otkaže $date.\nPrenazovite se sada kako biste zadržali svoju korist - bez naplate do $date.';
   }
 
   @override
@@ -5119,11 +5112,11 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Nastavkom, svi podaci koje dijelite s ovom aplikacijom (uključujući vaše razgovore, snimanja i osobne podatke) bit će sigurno pohranjeni na našim poslužiteljima kako bismo vam dali AI-powered insights i omogućili sve karakteristike aplikacije.';
+      'Nastavljanjem, vaši razgovori, snimke i osobni podaci bit će sigurno pohranjeni na našim poslužiteljima. Vaši audio zapisi i transkripti obrađuju se od strane AI usluga trećih strana (uključujući Deepgram za transkripciju i OpenAI za analizu) kako bi vam pružili uvide pokretane umjetnom inteligencijom i omogućili sve značajke aplikacije.';
 
   @override
   String get tasksEmptyStateMessage =>
-      'Zadaci iz vaših razgovora će se pojavljati ovdje.\\nDodirnite + da biste ručno kreirali jedan.';
+      'Zadaci iz vaših razgovora će se pojavljati ovdje.\nDodirnite + da biste ručno kreirali jedan.';
 
   @override
   String get clearChatAction => 'Očisti razgovor';
@@ -6564,7 +6557,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'Postavi $appName kao zadanu aplikaciju za sažimanje?\\n\\nOva aplikacija će biti automatski korištena za sve budućne sažetke razgovora.';
+    return 'Postavi $appName kao zadanu aplikaciju za sažimanje?\n\nOva aplikacija će biti automatski korištena za sve budućne sažetke razgovora.';
   }
 
   @override
@@ -7205,12 +7198,6 @@ class AppLocalizationsHr extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count razgovora je uspješno spojeno';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Vrijeme je za Dnevnu Refleksiju';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Recite mi o vašem danu';
 
   @override
   String get actionItemReminderTitle => 'Omi Podsjetnik';
@@ -8332,6 +8319,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Postavke telefonskih poziva';
 
   @override
+  String get showPhoneCallButtonTitle => 'Prikaži gumb za poziv';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Prikaži gumb za telefonski poziv na početnom zaslonu';
+
+  @override
   String get yourVerifiedNumbers => 'Vaši potvrđeni brojevi';
 
   @override
@@ -9169,4 +9162,100 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Dosegli ste svoj mjesečni limit. Nadogradite da nastavite razgovarati s Omi bez ograničenja.';
+
+  @override
+  String get voiceResponseAudio => 'Pročitaj Omijev odgovor naglas';
+
+  @override
+  String get voiceResponseMode => 'Glasovni odgovor';
+
+  @override
+  String get voiceResponseModeTitle => 'Kada izgovarati odgovore';
+
+  @override
+  String get voiceResponseOff => 'Isključeno';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Samo slušalice';
+
+  @override
+  String get voiceResponseAlways => 'Uvijek';
+
+  @override
+  String get agreeAndContinue => 'Slažem se i nastavi';
+
+  @override
+  String get startVoiceRecording => 'Pokreni glasovno snimanje';
+
+  @override
+  String get startCallRecording => 'Pokreni snimanje poziva';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Glasovni način';
+
+  @override
+  String get quickActionAskOmi => 'Pitajte Omi bilo što';
+
+  @override
+  String get record => 'Snimi';
+
+  @override
+  String get stop => 'Zaustavi';
+
+  @override
+  String get recordWithPhoneMic => 'Snimaj telefonskim mikrofonom';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Snimite zvuk oko vas';
+
+  @override
+  String get phoneCall => 'Telefonski poziv';
+
+  @override
+  String get phoneCallSubtitle => 'Snimajte poziv s transkripcijom uživo';
+
+  @override
+  String get searchActionItems => 'Pretraži akcijske stavke';
+
+  @override
+  String get selectActionItems => 'Odaberi više';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Izvezi $count stavku/i u…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Izvoz u tijeku…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Izvezeno $count u $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Izvezeno $success od $total u $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Prikaži dovršene';
+
+  @override
+  String get hideCompletedTasks => 'Sakrij dovršene';
+
+  @override
+  String get selectAllTasksMenu => 'Odaberi sve';
+
+  @override
+  String get connectTaskAppToExport => 'Povežite aplikaciju za zadatke u Postavkama za izvoz';
+
+  @override
+  String get connectAction => 'Poveži';
+
+  @override
+  String get deselectAllTasksMenu => 'Poništi odabir svih';
 }

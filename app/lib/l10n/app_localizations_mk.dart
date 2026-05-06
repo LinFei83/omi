@@ -2384,6 +2384,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get batteryLevel => 'Ниво на батерија';
 
   @override
+  String get charging => 'Полнење';
+
+  @override
   String get productUpdate => 'Ажурирање на производ';
 
   @override
@@ -2510,12 +2513,6 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Прати твои лични цели на почетната страница';
-
-  @override
-  String get dailyReflection => 'Дневна рефлексија';
-
-  @override
-  String get get9PmReminderToReflect => 'Добивај потсетник во 21:00 да се размислиш за твојот ден';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Описот на активниот предмет не може да буде празан';
@@ -3938,10 +3935,6 @@ class AppLocalizationsMk extends AppLocalizations {
   String get trackPersonalGoals => 'Праток лични цели на почетна страница';
 
   @override
-  String get dailyReflectionDescription =>
-      'Добиј потсетник во 21:00 за да размислиш на твоиот ден и да го напишеш твое размислување.';
-
-  @override
   String get endpointURL => 'URL на крајна точка';
 
   @override
@@ -4554,12 +4547,12 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Вашиот план заврши на $date.\\nПретплатете се сега - ќе бидете наплатени веднаш за нов период на наплатување.';
+    return 'Вашиот план заврши на $date.\nПретплатете се сега - ќе бидете наплатени веднаш за нов период на наплатување.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Вашиот план е поставен да се откаже на $date.\\nПретплатете се сега за да ги задржите вашите бенефиции - без наплата до $date.';
+    return 'Вашиот план е поставен да се откаже на $date.\nПретплатете се сега за да ги задржите вашите бенефиции - без наплата до $date.';
   }
 
   @override
@@ -5126,11 +5119,11 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Со продолжување, сите податоци што ги делите со оваа апликација (вклучувајќи ги вашите разговори, снимки и лични информации) ќе бидат безбедно складирани на нашите сервери за да вам обезбедиме AI-powered insights и да ги овозможиме сите функции на апликацијата.';
+      'Со продолжување, вашите разговори, снимки и лични информации ќе бидат безбедно зачувани на нашите сервери. Вашите аудио снимки и транскрипти се обработуваат од AI услуги на трети страни (вклучувајќи Deepgram за транскрипција и OpenAI за анализа) за да ви обезбедат увиди базирани на AI и да ги овозможат сите функции на апликацијата.';
 
   @override
   String get tasksEmptyStateMessage =>
-      'Задачите од вашите разговори ќе се појават овде.\\nОтвори + за да создадеш една ручно.';
+      'Задачите од вашите разговори ќе се појават овде.\nОтвори + за да создадеш една ручно.';
 
   @override
   String get clearChatAction => 'Очисти разговор';
@@ -7223,12 +7216,6 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get dailyReflectionNotificationTitle => 'Време за Дневно Размислување';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Кажи ми за твојот ден';
-
-  @override
   String get actionItemReminderTitle => 'Omi Потсетник';
 
   @override
@@ -8349,6 +8336,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Поставки за телефонски разговор';
 
   @override
+  String get showPhoneCallButtonTitle => 'Прикажи копче за повик';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Прикажи копче за телефонски повик на почетниот екран';
+
+  @override
   String get yourVerifiedNumbers => 'Твоите потврдени броеви';
 
   @override
@@ -9188,4 +9181,100 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Го достигнавте вашиот месечен лимит. Надградете за да продолжите да разговарате со Omi без ограничувања.';
+
+  @override
+  String get voiceResponseAudio => 'Прочитај го одговорот на Omi гласно';
+
+  @override
+  String get voiceResponseMode => 'Гласовен одговор';
+
+  @override
+  String get voiceResponseModeTitle => 'Кога да се изговараат одговорите';
+
+  @override
+  String get voiceResponseOff => 'Исклучено';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Само слушалки';
+
+  @override
+  String get voiceResponseAlways => 'Секогаш';
+
+  @override
+  String get agreeAndContinue => 'Се согласувам и продолжи';
+
+  @override
+  String get startVoiceRecording => 'Започни гласовно снимање';
+
+  @override
+  String get startCallRecording => 'Започни снимање повик';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Гласовен режим';
+
+  @override
+  String get quickActionAskOmi => 'Прашајте го Omi за сè';
+
+  @override
+  String get record => 'Сними';
+
+  @override
+  String get stop => 'Стоп';
+
+  @override
+  String get recordWithPhoneMic => 'Снимај со микрофон на телефонот';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Снимајте звук околу вас';
+
+  @override
+  String get phoneCall => 'Телефонски повик';
+
+  @override
+  String get phoneCallSubtitle => 'Снимајте повик со транскрипција во живо';
+
+  @override
+  String get searchActionItems => 'Пребарај акциски ставки';
+
+  @override
+  String get selectActionItems => 'Избери повеќе';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Извези $count ставка/и во…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Извезување…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Извезени $count во $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Извезени $success од $total во $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Прикажи завршени';
+
+  @override
+  String get hideCompletedTasks => 'Сокриј завршени';
+
+  @override
+  String get selectAllTasksMenu => 'Избери ги сите';
+
+  @override
+  String get connectTaskAppToExport => 'Поврзете апликација за задачи во Поставки за извоз';
+
+  @override
+  String get connectAction => 'Поврзи';
+
+  @override
+  String get deselectAllTasksMenu => 'Одселектирај ги сите';
 }

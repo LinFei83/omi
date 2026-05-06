@@ -2371,6 +2371,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get batteryLevel => 'Batterinivå';
 
   @override
+  String get charging => 'Laddar';
+
+  @override
   String get productUpdate => 'Produktuppdatering';
 
   @override
@@ -2497,12 +2500,6 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Spåra dina personliga mål på startsidan';
-
-  @override
-  String get dailyReflection => 'Daglig reflektion';
-
-  @override
-  String get get9PmReminderToReflect => 'Få en påminnelse kl. 21 att reflektera över din dag';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Åtgärdspostbeskrivning kan inte vara tom';
@@ -3923,10 +3920,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get trackPersonalGoals => 'Spåra personliga mål på startsidan';
 
   @override
-  String get dailyReflectionDescription =>
-      'Få en påminnelse kl. 21 för att reflektera över din dag och fånga dina tankar.';
-
-  @override
   String get endpointURL => 'Slutpunkts-URL';
 
   @override
@@ -4532,12 +4525,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Din plan avslutades $date.\\nPrenumerera igen nu - du debiteras omedelbart för en ny faktureringsperiod.';
+    return 'Din plan avslutades $date.\nPrenumerera igen nu - du debiteras omedelbart för en ny faktureringsperiod.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Din plan är inställd på att avbrytas $date.\\nPrenumerera igen nu för att behålla dina fördelar - ingen avgift till $date.';
+    return 'Din plan är inställd på att avbrytas $date.\nPrenumerera igen nu för att behålla dina fördelar - ingen avgift till $date.';
   }
 
   @override
@@ -5101,7 +5094,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Genom att fortsätta kommer all data du delar med denna app (inklusive dina konversationer, inspelningar och personlig information) att lagras säkert på våra servrar för att ge dig AI-drivna insikter och aktivera alla appfunktioner.';
+      'Genom att fortsätta kommer dina konversationer, inspelningar och personlig information att lagras säkert på våra servrar. Dina ljudinspelningar och transkriptioner behandlas av AI-tjänster från tredje part (inklusive Deepgram för transkription och OpenAI för analys) för att ge dig AI-drivna insikter och aktivera alla appfunktioner.';
 
   @override
   String get tasksEmptyStateMessage =>
@@ -6549,7 +6542,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'Ange $appName som din standardapp för sammanfattningar?\\n\\nDenna app kommer automatiskt att användas för alla framtida konversationssammanfattningar.';
+    return 'Ange $appName som din standardapp för sammanfattningar?\n\nDenna app kommer automatiskt att användas för alla framtida konversationssammanfattningar.';
   }
 
   @override
@@ -7185,12 +7178,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count konversationer har sammanfogats';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Dags för daglig reflektion';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Berätta om din dag';
 
   @override
   String get actionItemReminderTitle => 'Omi-påminnelse';
@@ -8306,6 +8293,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Samtalsinstellningar';
 
   @override
+  String get showPhoneCallButtonTitle => 'Visa samtalsknapp';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Visa telefonsamtalsknapp på startskärmen';
+
+  @override
   String get yourVerifiedNumbers => 'Dina verifierade nummer';
 
   @override
@@ -9143,4 +9136,100 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Du har nått din månatliga gräns. Uppgradera för att fortsätta chatta med Omi utan begränsningar.';
+
+  @override
+  String get voiceResponseAudio => 'Läs upp Omis svar';
+
+  @override
+  String get voiceResponseMode => 'Röstsvar';
+
+  @override
+  String get voiceResponseModeTitle => 'När svar ska läsas upp';
+
+  @override
+  String get voiceResponseOff => 'Av';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Endast hörlurar';
+
+  @override
+  String get voiceResponseAlways => 'Alltid';
+
+  @override
+  String get agreeAndContinue => 'Godkänn och fortsätt';
+
+  @override
+  String get startVoiceRecording => 'Starta röstinspelning';
+
+  @override
+  String get startCallRecording => 'Starta samtalsinspelning';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Röstläge';
+
+  @override
+  String get quickActionAskOmi => 'Fråga Omi vad som helst';
+
+  @override
+  String get record => 'Spela in';
+
+  @override
+  String get stop => 'Stoppa';
+
+  @override
+  String get recordWithPhoneMic => 'Spela in med telefonmikrofon';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Fånga ljudet runt dig';
+
+  @override
+  String get phoneCall => 'Telefonsamtal';
+
+  @override
+  String get phoneCallSubtitle => 'Spela in samtal med live-transkribering';
+
+  @override
+  String get searchActionItems => 'Sök åtgärdspunkter';
+
+  @override
+  String get selectActionItems => 'Välj flera';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Exportera $count objekt till…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Exporterar…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Exporterade $count till $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Exporterade $success av $total till $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Visa slutförda';
+
+  @override
+  String get hideCompletedTasks => 'Dölj slutförda';
+
+  @override
+  String get selectAllTasksMenu => 'Välj alla';
+
+  @override
+  String get connectTaskAppToExport => 'Anslut en uppgiftsapp i Inställningar för att exportera';
+
+  @override
+  String get connectAction => 'Anslut';
+
+  @override
+  String get deselectAllTasksMenu => 'Avmarkera alla';
 }

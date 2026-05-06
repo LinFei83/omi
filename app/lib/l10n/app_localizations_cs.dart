@@ -2371,6 +2371,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get batteryLevel => 'Stav baterie';
 
   @override
+  String get charging => 'Nabíjení';
+
+  @override
   String get productUpdate => 'Aktualizace produktu';
 
   @override
@@ -2497,12 +2500,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Sledujte své osobní cíle na domovské stránce';
-
-  @override
-  String get dailyReflection => 'Denní reflexe';
-
-  @override
-  String get get9PmReminderToReflect => 'Získejte připomínku v 21:00 k zamyšlení nad svým dnem';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Popis úkolu nesmí být prázdný';
@@ -3916,10 +3913,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get trackPersonalGoals => 'Sledovat osobní cíle na domovské stránce';
 
   @override
-  String get dailyReflectionDescription =>
-      'Získejte připomínku ve 21:00, abyste se zamysleli nad svým dnem a zachytili své myšlenky.';
-
-  @override
   String get endpointURL => 'URL koncového bodu';
 
   @override
@@ -4524,12 +4517,12 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Váš plán skončil $date.\\nZnovu se přihlaste nyní - budete okamžitě účtováni za nové fakturační období.';
+    return 'Váš plán skončil $date.\nZnovu se přihlaste nyní - budete okamžitě účtováni za nové fakturační období.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Váš plán je nastaven na zrušení $date.\\nZnovu se přihlaste nyní, abyste si zachovali výhody - bez poplatku do $date.';
+    return 'Váš plán je nastaven na zrušení $date.\nZnovu se přihlaste nyní, abyste si zachovali výhody - bez poplatku do $date.';
   }
 
   @override
@@ -5092,7 +5085,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Pokračováním budou všechna data, která s touto aplikací sdílíte (včetně vašich konverzací, nahrávek a osobních informací), bezpečně uložena na našich serverech, abychom vám mohli poskytovat poznatky založené na AI a umožnit všechny funkce aplikace.';
+      'Pokračováním budou vaše konverzace, nahrávky a osobní údaje bezpečně uloženy na našich serverech. Vaše audio nahrávky a přepisy jsou zpracovávány AI službami třetích stran (včetně Deepgram pro přepis a OpenAI pro analýzu), aby vám poskytly poznatky založené na AI a umožnily všechny funkce aplikace.';
 
   @override
   String get tasksEmptyStateMessage => 'Úkoly z vašich konverzací se zobrazí zde.\nKlepněte na + pro ruční vytvoření.';
@@ -6536,7 +6529,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'Nastavit $appName jako výchozí aplikaci pro shrnutí?\\n\\nTato aplikace bude automaticky použita pro všechna budoucí shrnutí konverzací.';
+    return 'Nastavit $appName jako výchozí aplikaci pro shrnutí?\n\nTato aplikace bude automaticky použita pro všechna budoucí shrnutí konverzací.';
   }
 
   @override
@@ -7172,12 +7165,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count konverzací bylo úspěšně sloučeno';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Čas na denní reflexi';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Pověz mi o svém dni';
 
   @override
   String get actionItemReminderTitle => 'Připomínka Omi';
@@ -8299,6 +8286,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Nastaveni hovoru';
 
   @override
+  String get showPhoneCallButtonTitle => 'Zobrazit tlačítko telefonního hovoru';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Zobrazit tlačítko telefonního hovoru na domovské obrazovce';
+
+  @override
   String get yourVerifiedNumbers => 'Vase overena cisla';
 
   @override
@@ -9135,4 +9128,100 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Dosáhli jste svého měsíčního limitu. Upgradujte, abyste mohli pokračovat v chatu s Omi bez omezení.';
+
+  @override
+  String get voiceResponseAudio => 'Přečíst odpověď Omi nahlas';
+
+  @override
+  String get voiceResponseMode => 'Hlasová odpověď';
+
+  @override
+  String get voiceResponseModeTitle => 'Kdy vyslovit odpovědi';
+
+  @override
+  String get voiceResponseOff => 'Vypnuto';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Pouze sluchátka';
+
+  @override
+  String get voiceResponseAlways => 'Vždy';
+
+  @override
+  String get agreeAndContinue => 'Souhlasím a pokračovat';
+
+  @override
+  String get startVoiceRecording => 'Zahájit hlasový záznam';
+
+  @override
+  String get startCallRecording => 'Zahájit nahrávání hovoru';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Hlasový režim';
+
+  @override
+  String get quickActionAskOmi => 'Zeptejte se Omi na cokoliv';
+
+  @override
+  String get record => 'Nahrát';
+
+  @override
+  String get stop => 'Zastavit';
+
+  @override
+  String get recordWithPhoneMic => 'Nahrát mikrofonem telefonu';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Zaznamenávejte zvuk kolem vás';
+
+  @override
+  String get phoneCall => 'Telefonní hovor';
+
+  @override
+  String get phoneCallSubtitle => 'Nahrávejte hovor s živým přepisem';
+
+  @override
+  String get searchActionItems => 'Hledat akční položky';
+
+  @override
+  String get selectActionItems => 'Vybrat více';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Exportovat $count položek do…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Exportování…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Exportováno $count do $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Exportováno $success z $total do $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Zobrazit dokončené';
+
+  @override
+  String get hideCompletedTasks => 'Skrýt dokončené';
+
+  @override
+  String get selectAllTasksMenu => 'Vybrat vše';
+
+  @override
+  String get connectTaskAppToExport => 'Pro export připojte aplikaci úkolů v Nastavení';
+
+  @override
+  String get connectAction => 'Připojit';
+
+  @override
+  String get deselectAllTasksMenu => 'Zrušit výběr všech';
 }

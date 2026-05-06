@@ -2357,6 +2357,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get batteryLevel => 'רמת הסוללה';
 
   @override
+  String get charging => 'טוען';
+
+  @override
   String get productUpdate => 'עדכון מוצר';
 
   @override
@@ -2483,12 +2486,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'עקוב אחר היעדים האישיים שלך בעמוד הבית';
-
-  @override
-  String get dailyReflection => 'השתקפות יומית';
-
-  @override
-  String get get9PmReminderToReflect => 'קבל תזכורת בשעה 21:00 להשתקפות על היום שלך';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'תיאור פריט פעולה לא יכול להיות ריק';
@@ -3893,9 +3890,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get trackPersonalGoals => 'עקוב אחר יעדים אישיים בדף הבית';
 
   @override
-  String get dailyReflectionDescription => 'קבל תזכורת ב-9 בערב להתבוננות על היום שלך וללכידת המחשבות שלך.';
-
-  @override
   String get endpointURL => 'כתובת URL של נקודת קצה';
 
   @override
@@ -4494,12 +4488,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'התוכנית שלך הסתיימה ב-$date.\\nהירשם מחדש כעת - תחויב מיד לתקופת חיוב חדשה.';
+    return 'התוכנית שלך הסתיימה ב-$date.\nהירשם מחדש כעת - תחויב מיד לתקופת חיוב חדשה.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'התוכנית שלך מוגדרת להיות מבוטלת ב-$date.\\nהירשם מחדש כעת כדי לשמור על ההטבות שלך - לא תחויב עד $date.';
+    return 'התוכנית שלך מוגדרת להיות מבוטלת ב-$date.\nהירשם מחדש כעת כדי לשמור על ההטבות שלך - לא תחויב עד $date.';
   }
 
   @override
@@ -5057,10 +5051,10 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'על ידי המשך, כל הנתונים שתשתף עם אפליקציה זו (כולל השיחות, ההקלטות והמידע האישי שלך) ישמרו בבטחה בשרתים שלנו כדי לספק לך תובנות מונעות בינה מלאכותית ולאפשר את כל תכונות האפליקציה.';
+      'בהמשך, השיחות, ההקלטות והמידע האישי שלך יאוחסנו בצורה מאובטחת בשרתים שלנו. הקלטות האודיו והתמלולים שלך מעובדים על ידי שירותי AI של צד שלישי (כולל Deepgram לתמלול ו-OpenAI לניתוח) כדי לספק לך תובנות מבוססות AI ולאפשר את כל תכונות האפליקציה.';
 
   @override
-  String get tasksEmptyStateMessage => 'משימות משיחותיך יופיעו כאן.\\nלחץ + כדי ליצור אחת ידנית.';
+  String get tasksEmptyStateMessage => 'משימות משיחותיך יופיעו כאן.\nלחץ + כדי ליצור אחת ידנית.';
 
   @override
   String get clearChatAction => 'נקה שיחה';
@@ -5093,14 +5087,14 @@ class AppLocalizationsHe extends AppLocalizations {
   String get checkingAppleWatch => 'בדוק Apple Watch...';
 
   @override
-  String get installOmiOnAppleWatch => 'התקן Omi ב-\\nApple Watch';
+  String get installOmiOnAppleWatch => 'התקן Omi ב-\nApple Watch';
 
   @override
   String get installOmiOnAppleWatchDescription =>
       'כדי להשתמש ב-Apple Watch שלך עם Omi, תחילה עליך להתקין את אפליקציית Omi בשעון שלך.';
 
   @override
-  String get openOmiOnAppleWatch => 'פתח Omi ב-\\nApple Watch';
+  String get openOmiOnAppleWatch => 'פתח Omi ב-\nApple Watch';
 
   @override
   String get openOmiOnAppleWatchDescription =>
@@ -5353,10 +5347,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get wrappedProcessingDefault => 'בעיבוד...';
 
   @override
-  String get wrappedCreatingYourStory => 'יצירת הסיפור שלך\\n2025...';
+  String get wrappedCreatingYourStory => 'יצירת הסיפור שלך\n2025...';
 
   @override
-  String get wrappedSomethingWentWrong => 'משהו\\nהלך לא בסדר';
+  String get wrappedSomethingWentWrong => 'משהו\nהלך לא בסדר';
 
   @override
   String get wrappedAnErrorOccurred => 'ארעה שגיאה';
@@ -6492,7 +6486,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'הגדר את $appName כאפליקציית הסיכום ברירת המחדל שלך?\\n\\nאפליקציה זו תשמש באופן אוטומטי לכל סיכומי השיחות בעתיד.';
+    return 'הגדר את $appName כאפליקציית הסיכום ברירת המחדל שלך?\n\nאפליקציה זו תשמש באופן אוטומטי לכל סיכומי השיחות בעתיד.';
   }
 
   @override
@@ -7122,12 +7116,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count שיחות מוזגו בהצלחה';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'זמן להתרכזות יומית';
-
-  @override
-  String get dailyReflectionNotificationBody => 'ספר לי על היום שלך';
 
   @override
   String get actionItemReminderTitle => 'תזכורת Omi';
@@ -8235,6 +8223,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get phoneCallSettingsTitle => 'הגדרות שיחות טלפון';
 
   @override
+  String get showPhoneCallButtonTitle => 'הצג כפתור שיחת טלפון';
+
+  @override
+  String get showPhoneCallButtonDesc => 'הצג כפתור שיחת טלפון במסך הבית';
+
+  @override
   String get yourVerifiedNumbers => 'המספרים המאומתים שלך';
 
   @override
@@ -9066,4 +9060,100 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get chatQuotaExceededReply => 'הגעת למגבלה החודשית שלך. שדרג כדי להמשיך לשוחח עם Omi ללא הגבלות.';
+
+  @override
+  String get voiceResponseAudio => 'קרא את תגובת Omi בקול';
+
+  @override
+  String get voiceResponseMode => 'תגובה קולית';
+
+  @override
+  String get voiceResponseModeTitle => 'מתי לקרוא תשובות';
+
+  @override
+  String get voiceResponseOff => 'כבוי';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'אוזניות בלבד';
+
+  @override
+  String get voiceResponseAlways => 'תמיד';
+
+  @override
+  String get agreeAndContinue => 'אני מסכים והמשך';
+
+  @override
+  String get startVoiceRecording => 'התחל הקלטה קולית';
+
+  @override
+  String get startCallRecording => 'התחל הקלטת שיחה';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'מצב קולי';
+
+  @override
+  String get quickActionAskOmi => 'שאל את Omi כל דבר';
+
+  @override
+  String get record => 'הקלט';
+
+  @override
+  String get stop => 'עצור';
+
+  @override
+  String get recordWithPhoneMic => 'הקלט עם מיקרופון הטלפון';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'הקלט שמע סביבך';
+
+  @override
+  String get phoneCall => 'שיחת טלפון';
+
+  @override
+  String get phoneCallSubtitle => 'הקלט שיחה עם תמלול חי';
+
+  @override
+  String get searchActionItems => 'חפש פריטי פעולה';
+
+  @override
+  String get selectActionItems => 'בחירה מרובה';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'ייצוא $count פריט(ים) אל…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'מייצא…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'יוצאו $count אל $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'יוצאו $success מתוך $total אל $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'הצג הושלמו';
+
+  @override
+  String get hideCompletedTasks => 'הסתר הושלמו';
+
+  @override
+  String get selectAllTasksMenu => 'בחר הכל';
+
+  @override
+  String get connectTaskAppToExport => 'חבר אפליקציית משימות בהגדרות כדי לייצא';
+
+  @override
+  String get connectAction => 'חיבור';
+
+  @override
+  String get deselectAllTasksMenu => 'בטל בחירת הכל';
 }

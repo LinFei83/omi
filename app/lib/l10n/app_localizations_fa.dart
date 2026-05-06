@@ -2374,6 +2374,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get batteryLevel => 'سطح باتری';
 
   @override
+  String get charging => 'در حال شارژ';
+
+  @override
   String get productUpdate => 'بروزرسانی محصول';
 
   @override
@@ -2500,12 +2503,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'ردیابی اهداف شخصی خود در صفحه اصلی';
-
-  @override
-  String get dailyReflection => 'تأمل روزانه';
-
-  @override
-  String get get9PmReminderToReflect => 'یادآوری ساعت 9 شب برای تأمل در روز خود';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'توضیح مورد اقدام نمی‌تواند خالی باشد';
@@ -3923,9 +3920,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get trackPersonalGoals => 'پیگیری اهداف شخصی در صفحه اصلی';
 
   @override
-  String get dailyReflectionDescription => 'یادآوری در ساعت ۹ شب برای تفکر در روز خود و ثبت افکار خود.';
-
-  @override
   String get endpointURL => 'URL نقطه پایانی';
 
   @override
@@ -4533,12 +4527,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'طرح شما در تاریخ $date پایان یافت.\\nهمین الآن مجددا مشترک شوید - برای یک دوره صورت‌حساب جدید بلافاصله شارژ خواهید شد.';
+    return 'طرح شما در تاریخ $date پایان یافت.\nهمین الآن مجددا مشترک شوید - برای یک دوره صورت‌حساب جدید بلافاصله شارژ خواهید شد.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'طرح شما برای لغو در تاریخ $date برنامه‌ریزی شده است.\\nهمین الآن مجددا مشترک شوید تا از مزایای خود محروم نشوید - تا $date هیچ هزینه‌ای نخواهید داشت.';
+    return 'طرح شما برای لغو در تاریخ $date برنامه‌ریزی شده است.\nهمین الآن مجددا مشترک شوید تا از مزایای خود محروم نشوید - تا $date هیچ هزینه‌ای نخواهید داشت.';
   }
 
   @override
@@ -5102,11 +5096,11 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'با ادامه، تمام داده‌هایی که با این برنامه اشتراک می‌گذارید (شامل مکالمات، ضبط‌ها و اطلاعات شخصی شما) به‌طور ایمن روی سرورهای ما ذخیره خواهند شد تا برای شما بینش‌های هوشمند فراهم کند و تمام ویژگی‌های برنامه را فعال کند.';
+      'با ادامه دادن، مکالمات، ضبط‌ها و اطلاعات شخصی شما به طور ایمن در سرورهای ما ذخیره می‌شود. ضبط‌های صوتی و رونوشت‌های شما توسط سرویس‌های هوش مصنوعی شخص ثالث (از جمله Deepgram برای رونویسی و OpenAI برای تحلیل) پردازش می‌شوند تا بینش‌های مبتنی بر هوش مصنوعی را به شما ارائه دهند و تمام ویژگی‌های برنامه را فعال کنند.';
 
   @override
   String get tasksEmptyStateMessage =>
-      'وظایف از مکالمات شما اینجا ظاهر خواهند شد.\\n+ را ضربه بزنید تا یکی به‌صورت دستی ایجاد کنید.';
+      'وظایف از مکالمات شما اینجا ظاهر خواهند شد.\n+ را ضربه بزنید تا یکی به‌صورت دستی ایجاد کنید.';
 
   @override
   String get clearChatAction => 'پاک‌کردن چت';
@@ -5139,14 +5133,14 @@ class AppLocalizationsFa extends AppLocalizations {
   String get checkingAppleWatch => 'بررسی Apple Watch...';
 
   @override
-  String get installOmiOnAppleWatch => 'نصب Omi روی\\nApple Watch';
+  String get installOmiOnAppleWatch => 'نصب Omi روی\nApple Watch';
 
   @override
   String get installOmiOnAppleWatchDescription =>
       'برای استفاده از Apple Watch با Omi، شما باید ابتدا برنامه Omi را روی ساعت نصب کنید.';
 
   @override
-  String get openOmiOnAppleWatch => 'باز کردن Omi روی\\nApple Watch';
+  String get openOmiOnAppleWatch => 'باز کردن Omi روی\nApple Watch';
 
   @override
   String get openOmiOnAppleWatchDescription =>
@@ -5401,10 +5395,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get wrappedProcessingDefault => 'پردازش...';
 
   @override
-  String get wrappedCreatingYourStory => 'ایجاد\\nداستان 2025 شما...';
+  String get wrappedCreatingYourStory => 'ایجاد\nداستان 2025 شما...';
 
   @override
-  String get wrappedSomethingWentWrong => 'چیز\\nاشتباهی رخ داد';
+  String get wrappedSomethingWentWrong => 'چیز\nاشتباهی رخ داد';
 
   @override
   String get wrappedAnErrorOccurred => 'خطایی رخ داده است';
@@ -6548,7 +6542,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'تنظیم $appName به عنوان برنامه خلاصه سازی پیش فرض شما؟\\n\\nاین برنامه به طور خودکار برای تمام خلاصه های مکالمه آینده استفاده خواهد شد.';
+    return 'تنظیم $appName به عنوان برنامه خلاصه سازی پیش فرض شما؟\n\nاین برنامه به طور خودکار برای تمام خلاصه های مکالمه آینده استفاده خواهد شد.';
   }
 
   @override
@@ -7185,12 +7179,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count گفتگو با موفقیت ادغام شدند';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'وقت تأمل روزانه';
-
-  @override
-  String get dailyReflectionNotificationBody => 'درباره روز خود برای من بگویید';
 
   @override
   String get actionItemReminderTitle => 'یادآور Omi';
@@ -8306,6 +8294,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get phoneCallSettingsTitle => 'تنظیمات تماس تلفنی';
 
   @override
+  String get showPhoneCallButtonTitle => 'نمایش دکمه تماس';
+
+  @override
+  String get showPhoneCallButtonDesc => 'نمایش دکمه تماس تلفنی در صفحه اصلی';
+
+  @override
   String get yourVerifiedNumbers => 'شماره‌های تأیید شده شما';
 
   @override
@@ -9141,4 +9135,100 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'شما به حد ماهانه خود رسیده‌اید. برای ادامه گفتگو با Omi بدون محدودیت ارتقا دهید.';
+
+  @override
+  String get voiceResponseAudio => 'خواندن پاسخ Omi با صدای بلند';
+
+  @override
+  String get voiceResponseMode => 'پاسخ صوتی';
+
+  @override
+  String get voiceResponseModeTitle => 'چه زمانی پاسخ‌ها خوانده شوند';
+
+  @override
+  String get voiceResponseOff => 'خاموش';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'فقط هدفون';
+
+  @override
+  String get voiceResponseAlways => 'همیشه';
+
+  @override
+  String get agreeAndContinue => 'موافقم و ادامه';
+
+  @override
+  String get startVoiceRecording => 'شروع ضبط صدا';
+
+  @override
+  String get startCallRecording => 'شروع ضبط تماس';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'حالت صوتی';
+
+  @override
+  String get quickActionAskOmi => 'از Omi هر چیزی بپرسید';
+
+  @override
+  String get record => 'ضبط';
+
+  @override
+  String get stop => 'توقف';
+
+  @override
+  String get recordWithPhoneMic => 'ضبط با میکروفون تلفن';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'صدای اطراف خود را ضبط کنید';
+
+  @override
+  String get phoneCall => 'تماس تلفنی';
+
+  @override
+  String get phoneCallSubtitle => 'یک تماس را با رونویسی زنده ضبط کنید';
+
+  @override
+  String get searchActionItems => 'جستجوی موارد اقدام';
+
+  @override
+  String get selectActionItems => 'انتخاب چندگانه';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'صادرات $count مورد به…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'در حال صادرات…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return '$count به $platform صادر شد';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return '$success از $total به $platform صادر شد';
+  }
+
+  @override
+  String get showCompletedTasks => 'نمایش انجام‌شده‌ها';
+
+  @override
+  String get hideCompletedTasks => 'پنهان کردن انجام‌شده‌ها';
+
+  @override
+  String get selectAllTasksMenu => 'انتخاب همه';
+
+  @override
+  String get connectTaskAppToExport => 'برای صادرات، یک برنامه وظایف را در تنظیمات متصل کنید';
+
+  @override
+  String get connectAction => 'اتصال';
+
+  @override
+  String get deselectAllTasksMenu => 'لغو انتخاب همه';
 }

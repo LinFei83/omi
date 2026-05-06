@@ -2352,6 +2352,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get batteryLevel => 'مستوى البطارية';
 
   @override
+  String get charging => 'شحن';
+
+  @override
   String get productUpdate => 'تحديث المنتج';
 
   @override
@@ -2478,12 +2481,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'تتبع أهدافك الشخصية على الصفحة الرئيسية';
-
-  @override
-  String get dailyReflection => 'التأمل اليومي';
-
-  @override
-  String get get9PmReminderToReflect => 'احصل على تذكير في الساعة 9 مساءً للتأمل في يومك';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'لا يمكن أن يكون وصف عنصر الإجراء فارغًا';
@@ -3889,9 +3886,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get trackPersonalGoals => 'تتبع الأهداف الشخصية على الصفحة الرئيسية';
 
   @override
-  String get dailyReflectionDescription => 'احصل على تذكير في الساعة 9 مساءً للتأمل في يومك وتدوين أفكارك.';
-
-  @override
   String get endpointURL => 'عنوان URL لنقطة النهاية';
 
   @override
@@ -4494,12 +4488,12 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'انتهت خطتك في $date.\\nأعد الاشتراك الآن - سيتم تحصيل الرسوم فوراً لفترة فوترة جديدة.';
+    return 'انتهت خطتك في $date.\nأعد الاشتراك الآن - سيتم تحصيل الرسوم فوراً لفترة فوترة جديدة.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'تم تعيين خطتك للإلغاء في $date.\\nأعد الاشتراك الآن للحفاظ على مزاياك - لن يتم تحصيل رسوم حتى $date.';
+    return 'تم تعيين خطتك للإلغاء في $date.\nأعد الاشتراك الآن للحفاظ على مزاياك - لن يتم تحصيل رسوم حتى $date.';
   }
 
   @override
@@ -5059,7 +5053,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'بالمتابعة، سيتم تخزين جميع البيانات التي تشاركها مع هذا التطبيق (بما في ذلك محادثاتك وتسجيلاتك ومعلوماتك الشخصية) بشكل آمن على خوادمنا لتزويدك برؤى مدعومة بالذكاء الاصطناعي وتمكين جميع ميزات التطبيق.';
+      'بالمتابعة، سيتم تخزين محادثاتك وتسجيلاتك ومعلوماتك الشخصية بشكل آمن على خوادمنا. تتم معالجة تسجيلاتك الصوتية ونصوصك بواسطة خدمات ذكاء اصطناعي تابعة لجهات خارجية (بما في ذلك Deepgram للنسخ و OpenAI للتحليل) لتزويدك برؤى مدعومة بالذكاء الاصطناعي وتمكين جميع ميزات التطبيق.';
 
   @override
   String get tasksEmptyStateMessage => 'ستظهر المهام من محادثاتك هنا.\nاضغط على + لإنشاء مهمة يدويًا.';
@@ -6496,7 +6490,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'هل تريد تعيين $appName كتطبيق تلخيص افتراضي؟\\n\\nسيتم استخدام هذا التطبيق تلقائيًا لجميع ملخصات المحادثات المستقبلية.';
+    return 'هل تريد تعيين $appName كتطبيق تلخيص افتراضي؟\n\nسيتم استخدام هذا التطبيق تلقائيًا لجميع ملخصات المحادثات المستقبلية.';
   }
 
   @override
@@ -7128,12 +7122,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return 'تم دمج $count محادثات بنجاح';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'حان وقت التأمل اليومي';
-
-  @override
-  String get dailyReflectionNotificationBody => 'أخبرني عن يومك';
 
   @override
   String get actionItemReminderTitle => 'تذكير Omi';
@@ -8245,6 +8233,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get phoneCallSettingsTitle => 'إعدادات المكالمات الهاتفية';
 
   @override
+  String get showPhoneCallButtonTitle => 'إظهار زر المكالمة الهاتفية';
+
+  @override
+  String get showPhoneCallButtonDesc => 'عرض زر المكالمة الهاتفية على الشاشة الرئيسية';
+
+  @override
   String get yourVerifiedNumbers => 'أرقامك المتحقق منها';
 
   @override
@@ -9077,4 +9071,100 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get chatQuotaExceededReply => 'لقد وصلت إلى حدك الشهري. قم بالترقية لمتابعة الدردشة مع Omi بدون قيود.';
+
+  @override
+  String get voiceResponseAudio => 'قراءة رد Omi بصوت عالٍ';
+
+  @override
+  String get voiceResponseMode => 'استجابة صوتية';
+
+  @override
+  String get voiceResponseModeTitle => 'متى تُقرأ الردود';
+
+  @override
+  String get voiceResponseOff => 'إيقاف';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'السماعات فقط';
+
+  @override
+  String get voiceResponseAlways => 'دائماً';
+
+  @override
+  String get agreeAndContinue => 'أوافق وأتابع';
+
+  @override
+  String get startVoiceRecording => 'بدء التسجيل الصوتي';
+
+  @override
+  String get startCallRecording => 'بدء تسجيل المكالمة';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'وضع الصوت';
+
+  @override
+  String get quickActionAskOmi => 'اسأل أومي أي شيء';
+
+  @override
+  String get record => 'تسجيل';
+
+  @override
+  String get stop => 'إيقاف';
+
+  @override
+  String get recordWithPhoneMic => 'التسجيل بميكروفون الهاتف';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'التقط الصوت من حولك';
+
+  @override
+  String get phoneCall => 'مكالمة هاتفية';
+
+  @override
+  String get phoneCallSubtitle => 'سجّل مكالمة مع تفريغ مباشر';
+
+  @override
+  String get searchActionItems => 'البحث في عناصر الإجراء';
+
+  @override
+  String get selectActionItems => 'تحديد متعدد';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'تصدير $count عنصر(عناصر) إلى…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'جارٍ التصدير…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'تم تصدير $count إلى $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'تم تصدير $success من $total إلى $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'إظهار المكتملة';
+
+  @override
+  String get hideCompletedTasks => 'إخفاء المكتملة';
+
+  @override
+  String get selectAllTasksMenu => 'تحديد الكل';
+
+  @override
+  String get connectTaskAppToExport => 'قم بربط تطبيق مهام في الإعدادات للتصدير';
+
+  @override
+  String get connectAction => 'اتصال';
+
+  @override
+  String get deselectAllTasksMenu => 'إلغاء تحديد الكل';
 }

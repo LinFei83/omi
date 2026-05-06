@@ -2376,6 +2376,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get batteryLevel => 'Уровень заряда';
 
   @override
+  String get charging => 'Зарядка';
+
+  @override
   String get productUpdate => 'Обновление продукта';
 
   @override
@@ -2502,12 +2505,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Отслеживайте личные цели на главной странице';
-
-  @override
-  String get dailyReflection => 'Ежедневная рефлексия';
-
-  @override
-  String get get9PmReminderToReflect => 'Получите напоминание в 21:00, чтобы подвести итоги дня';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'Описание элемента действия не может быть пустым';
@@ -3927,10 +3924,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get trackPersonalGoals => 'Отслеживать личные цели на главной странице';
 
   @override
-  String get dailyReflectionDescription =>
-      'Получайте напоминание в 21:00 для размышления о прошедшем дне и записи мыслей.';
-
-  @override
   String get endpointURL => 'URL конечной точки';
 
   @override
@@ -4542,12 +4535,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Ваш план закончился $date.\\nПодпишитесь снова - с вас сразу спишется оплата за новый расчетный период.';
+    return 'Ваш план закончился $date.\nПодпишитесь снова - с вас сразу спишется оплата за новый расчетный период.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Ваш план будет отменен $date.\\nПодпишитесь снова, чтобы сохранить преимущества - без оплаты до $date.';
+    return 'Ваш план будет отменен $date.\nПодпишитесь снова, чтобы сохранить преимущества - без оплаты до $date.';
   }
 
   @override
@@ -5112,7 +5105,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Продолжая, все данные, которыми вы делитесь с этим приложением (включая ваши разговоры, записи и личную информацию), будут надежно храниться на наших серверах для предоставления вам аналитики на основе ИИ и включения всех функций приложения.';
+      'Продолжая, ваши разговоры, записи и личная информация будут надежно храниться на наших серверах. Ваши аудиозаписи и транскрипции обрабатываются сторонними AI-сервисами (включая Deepgram для транскрипции и OpenAI для анализа), чтобы предоставить вам аналитику на основе ИИ и обеспечить работу всех функций приложения.';
 
   @override
   String get tasksEmptyStateMessage => 'Задачи из ваших разговоров появятся здесь.\nНажмите +, чтобы создать вручную.';
@@ -6562,7 +6555,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'Установить $appName как приложение для сводок по умолчанию?\\n\\nЭто приложение будет автоматически использоваться для всех будущих сводок разговоров.';
+    return 'Установить $appName как приложение для сводок по умолчанию?\n\nЭто приложение будет автоматически использоваться для всех будущих сводок разговоров.';
   }
 
   @override
@@ -7200,12 +7193,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count разговоров успешно объединено';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Время для ежедневной рефлексии';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Расскажи мне о своём дне';
 
   @override
   String get actionItemReminderTitle => 'Напоминание Omi';
@@ -8330,6 +8317,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Настройки звонков';
 
   @override
+  String get showPhoneCallButtonTitle => 'Показать кнопку звонка';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Отображать кнопку телефонного звонка на главном экране';
+
+  @override
   String get yourVerifiedNumbers => 'Ваши подтвержденные номера';
 
   @override
@@ -9168,4 +9161,100 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Вы достигли месячного лимита. Обновите план, чтобы продолжить общение с Omi без ограничений.';
+
+  @override
+  String get voiceResponseAudio => 'Читать ответ Omi вслух';
+
+  @override
+  String get voiceResponseMode => 'Голосовой ответ';
+
+  @override
+  String get voiceResponseModeTitle => 'Когда озвучивать ответы';
+
+  @override
+  String get voiceResponseOff => 'Выкл';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Только наушники';
+
+  @override
+  String get voiceResponseAlways => 'Всегда';
+
+  @override
+  String get agreeAndContinue => 'Принять и продолжить';
+
+  @override
+  String get startVoiceRecording => 'Начать голосовую запись';
+
+  @override
+  String get startCallRecording => 'Начать запись звонка';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Голосовой режим';
+
+  @override
+  String get quickActionAskOmi => 'Спросите Omi что угодно';
+
+  @override
+  String get record => 'Запись';
+
+  @override
+  String get stop => 'Стоп';
+
+  @override
+  String get recordWithPhoneMic => 'Запись микрофоном телефона';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Запишите звук вокруг вас';
+
+  @override
+  String get phoneCall => 'Телефонный звонок';
+
+  @override
+  String get phoneCallSubtitle => 'Запись звонка с транскрипцией в реальном времени';
+
+  @override
+  String get searchActionItems => 'Поиск действий';
+
+  @override
+  String get selectActionItems => 'Выбрать несколько';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Экспортировать $count элемент(ов) в…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Экспорт…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Экспортировано $count в $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Экспортировано $success из $total в $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Показать завершённые';
+
+  @override
+  String get hideCompletedTasks => 'Скрыть завершённые';
+
+  @override
+  String get selectAllTasksMenu => 'Выбрать все';
+
+  @override
+  String get connectTaskAppToExport => 'Подключите приложение задач в Настройках для экспорта';
+
+  @override
+  String get connectAction => 'Подключить';
+
+  @override
+  String get deselectAllTasksMenu => 'Снять выделение со всех';
 }

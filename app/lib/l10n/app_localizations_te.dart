@@ -2385,6 +2385,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get batteryLevel => 'బ్యాటరీ స్థాయి';
 
   @override
+  String get charging => 'ఛార్జ్ అవుతోంది';
+
+  @override
   String get productUpdate => 'ఉత్పత్తి అపడేట్';
 
   @override
@@ -2511,12 +2514,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'హోమ్‌పేజ్‌లో వ్యక్తిగత లక్ష్యాలను ట్రాక్ చేయండి';
-
-  @override
-  String get dailyReflection => 'రోజువారీ ఆలోచన';
-
-  @override
-  String get get9PmReminderToReflect => 'మీ రోజుపై ఆలోచించడానికి సాయంత్రం 9 గంటలకు రిమైండర్ పొందండి';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'కార్యాచరణ అంశం వివరణ ఖాళీగా ఉండకూడదు';
@@ -3941,10 +3938,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get trackPersonalGoals => 'హోమ్‌పేజీలో వ్యక్తిగత లక్ష్యాలను ట్రాక్ చేయండి';
 
   @override
-  String get dailyReflectionDescription =>
-      'రాత్రి 9:00 కు మీ దిన్ను ఆలోచించుకోవటానికి మరియు మీ ఆలోచనలను కేటుకోవటానికి రిమైండర్ పొందండి.';
-
-  @override
   String get endpointURL => 'ఎండ్‌పాయింట్ URL';
 
   @override
@@ -4556,12 +4549,12 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'మీ ప్లాన్ $date న ముగిసింది.\\nఇప్పుడే సబ్‌స్క్రిప్ట్ చేయండి - కొత్త బిల్లింగ్ వ్యవధి కోసం ఛార్జ్ చేయబడుతారు.';
+    return 'మీ ప్లాన్ $date న ముగిసింది.\nఇప్పుడే సబ్‌స్క్రిప్ట్ చేయండి - కొత్త బిల్లింగ్ వ్యవధి కోసం ఛార్జ్ చేయబడుతారు.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'మీ ప్లాన్ $date న రద్దు చేయడానికి సెట్ చేయబడింది.\\nమీ ప్రయోజనాలను ఉంచడానికి ఇప్పుడే సబ్‌స్క్రిప్ట్ చేయండి - $date వరకు ఛార్జ్ లేదు.';
+    return 'మీ ప్లాన్ $date న రద్దు చేయడానికి సెట్ చేయబడింది.\nమీ ప్రయోజనాలను ఉంచడానికి ఇప్పుడే సబ్‌స్క్రిప్ట్ చేయండి - $date వరకు ఛార్జ్ లేదు.';
   }
 
   @override
@@ -5130,11 +5123,10 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'కొనసాగించడం ద్వారా, ఈ అనువర్తనకు మీరు భాగస్వామ్యం చేసిన అన్ని డేటా (మీ సంభాషణలు, రికార్డింగ్‌లు మరియు వ్యక్తిగత సమాచారం సహా) AI-శక్తిచేసిన సమాచారం అందించడానికి మరియు అన్ని అనువర్తన లక్షణాలను ప్రారంభించడానికి మా సర్వర్‌లలో సురక్షితంగా నిల్వ చేయబడుతుంది.';
+      'కొనసాగించడం ద్వారా, మీ సంభాషణలు, రికార్డింగ్‌లు మరియు వ్యక్తిగత సమాచారం మా సర్వర్‌లలో సురక్షితంగా నిల్వ చేయబడతాయి. మీ ఆడియో రికార్డింగ్‌లు మరియు ట్రాన్‌స్క్రిప్ట్‌లు థర్డ్-పార్టీ AI సేవల ద్వారా ప్రాసెస్ చేయబడతాయి (ట్రాన్‌స్క్రిప్షన్ కోసం Deepgram మరియు విశ్లేషణ కోసం OpenAI సహా) AI-ఆధారిత అంతర్దృష్టులను అందించడానికి మరియు అన్ని యాప్ ఫీచర్‌లను ప్రారంభించడానికి.';
 
   @override
-  String get tasksEmptyStateMessage =>
-      'మీ సంభాషణల నుండి చర్యలు ఇక్కడ కనిపిస్తాయి.\\n+ నిర్ణయం చేయడానికి ట్యాప్ చేయండి.';
+  String get tasksEmptyStateMessage => 'మీ సంభాషణల నుండి చర్యలు ఇక్కడ కనిపిస్తాయి.\n+ నిర్ణయం చేయడానికి ట్యాప్ చేయండి.';
 
   @override
   String get clearChatAction => 'చాట్‌ను క్లియర్ చేయండి';
@@ -5167,14 +5159,14 @@ class AppLocalizationsTe extends AppLocalizations {
   String get checkingAppleWatch => 'Apple Watch ని తనిఖీ చేస్తోంది...';
 
   @override
-  String get installOmiOnAppleWatch => 'Omi ని మీ\\nApple Watch లో ఇన్‌స్టాల్ చేయండి';
+  String get installOmiOnAppleWatch => 'Omi ని మీ\nApple Watch లో ఇన్‌స్టాల్ చేయండి';
 
   @override
   String get installOmiOnAppleWatchDescription =>
       'మీ Apple Watch ని Omi ఉపయోగించడానికి, మీరు ముందుగా మీ గడియారం మీద Omi అనువర్తనాన్ని ఇన్‌స్టాల్ చేయాలి.';
 
   @override
-  String get openOmiOnAppleWatch => 'Omi ని మీ\\nApple Watch లో తెరవండి';
+  String get openOmiOnAppleWatch => 'Omi ని మీ\nApple Watch లో తెరవండి';
 
   @override
   String get openOmiOnAppleWatchDescription =>
@@ -5429,10 +5421,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get wrappedProcessingDefault => 'ప్రక్రియ చేయడం...';
 
   @override
-  String get wrappedCreatingYourStory => 'మీ\\n2025 కథను సృష్టిస్తోంది...';
+  String get wrappedCreatingYourStory => 'మీ\n2025 కథను సృష్టిస్తోంది...';
 
   @override
-  String get wrappedSomethingWentWrong => 'ఏదో\\nపొరపాటు జరిగింది';
+  String get wrappedSomethingWentWrong => 'ఏదో\nపొరపాటు జరిగింది';
 
   @override
   String get wrappedAnErrorOccurred => 'ఎర్రర్ సంభవించింది';
@@ -6586,7 +6578,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return '$appName ను మీ డిఫాల్ట్ సంక్షేపణ ఆ్యాప్‌గా సెట్ చేయాలా?\\n\\nఈ ఆ్యాప్ అన్ని భవిష్యత్ సంభాషణ సారాంశాల కోసం స్వయంచాలకంగా ఉపయోగించబడుతుంది.';
+    return '$appName ను మీ డిఫాల్ట్ సంక్షేపణ ఆ్యాప్‌గా సెట్ చేయాలా?\n\nఈ ఆ్యాప్ అన్ని భవిష్యత్ సంభాషణ సారాంశాల కోసం స్వయంచాలకంగా ఉపయోగించబడుతుంది.';
   }
 
   @override
@@ -7226,12 +7218,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count సంభాషణలను విజయవంతంగా విలీనం చేయబడింది';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'రోజువారీ ప్రతిబింబ సమయం';
-
-  @override
-  String get dailyReflectionNotificationBody => 'మీ రోజు గురించి నాకు చెప్పండి';
 
   @override
   String get actionItemReminderTitle => 'Omi రిమైండర్';
@@ -8353,6 +8339,12 @@ class AppLocalizationsTe extends AppLocalizations {
   String get phoneCallSettingsTitle => 'ఫోన్ కాల్ సెట్టింగ్‌లు';
 
   @override
+  String get showPhoneCallButtonTitle => 'ఫోన్ కాల్ బటన్ చూపించు';
+
+  @override
+  String get showPhoneCallButtonDesc => 'హోమ్ స్క్రీన్‌లో ఫోన్ కాల్ బటన్ చూపించు';
+
+  @override
   String get yourVerifiedNumbers => 'మీ ధృవీకరించిన సంఖ్యలు';
 
   @override
@@ -9190,4 +9182,100 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'మీరు మీ నెలవారీ పరిమితిని చేరుకున్నారు. పరిమితులు లేకుండా Omi తో చాట్ కొనసాగించడానికి అప్‌గ్రేడ్ చేయండి.';
+
+  @override
+  String get voiceResponseAudio => 'Omi ప్రతిస్పందనను బిగ్గరగా చదవండి';
+
+  @override
+  String get voiceResponseMode => 'వాయిస్ ప్రతిస్పందన';
+
+  @override
+  String get voiceResponseModeTitle => 'ప్రతిస్పందనలను ఎప్పుడు చదవాలి';
+
+  @override
+  String get voiceResponseOff => 'ఆఫ్';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'హెడ్‌ఫోన్‌లు మాత్రమే';
+
+  @override
+  String get voiceResponseAlways => 'ఎల్లప్పుడూ';
+
+  @override
+  String get agreeAndContinue => 'అంగీకరించి కొనసాగించండి';
+
+  @override
+  String get startVoiceRecording => 'వాయిస్ రికార్డింగ్ ప్రారంభించండి';
+
+  @override
+  String get startCallRecording => 'కాల్ రికార్డింగ్ ప్రారంభించండి';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'వాయిస్ మోడ్';
+
+  @override
+  String get quickActionAskOmi => 'Omi ని ఏమైనా అడగండి';
+
+  @override
+  String get record => 'రికార్డ్';
+
+  @override
+  String get stop => 'ఆపు';
+
+  @override
+  String get recordWithPhoneMic => 'ఫోన్ మైక్‌తో రికార్డ్ చేయండి';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'మీ చుట్టూ ఉన్న ఆడియోను క్యాప్చర్ చేయండి';
+
+  @override
+  String get phoneCall => 'ఫోన్ కాల్';
+
+  @override
+  String get phoneCallSubtitle => 'లైవ్ ట్రాన్స్‌క్రిప్షన్‌తో కాల్‌ను రికార్డ్ చేయండి';
+
+  @override
+  String get searchActionItems => 'చర్య అంశాలను వెతకండి';
+
+  @override
+  String get selectActionItems => 'బహుళ ఎంపిక';
+
+  @override
+  String chooseExportDestination(int count) {
+    return '$count అంశం(ాలను) ఎగుమతి చేయండి…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'ఎగుమతి చేస్తోంది…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return '$count ని $platform కు ఎగుమతి చేయబడింది';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return '$total లో $success ని $platform కు ఎగుమతి చేయబడింది';
+  }
+
+  @override
+  String get showCompletedTasks => 'పూర్తయినవి చూపించు';
+
+  @override
+  String get hideCompletedTasks => 'పూర్తయినవి దాచు';
+
+  @override
+  String get selectAllTasksMenu => 'అన్నీ ఎంచుకోండి';
+
+  @override
+  String get connectTaskAppToExport => 'ఎగుమతి చేయడానికి సెట్టింగ్‌లలో టాస్క్ యాప్‌ను కనెక్ట్ చేయండి';
+
+  @override
+  String get connectAction => 'కనెక్ట్ చేయండి';
+
+  @override
+  String get deselectAllTasksMenu => 'అన్ని ఎంపికలు తొలగించు';
 }

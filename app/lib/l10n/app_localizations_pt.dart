@@ -2343,6 +2343,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get batteryLevel => 'Nível da Bateria';
 
   @override
+  String get charging => 'Carregando';
+
+  @override
   String get productUpdate => 'Atualização do Produto';
 
   @override
@@ -2469,12 +2472,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'Acompanhe suas metas pessoais na página inicial';
-
-  @override
-  String get dailyReflection => 'Reflexão diária';
-
-  @override
-  String get get9PmReminderToReflect => 'Receba um lembrete às 21h para refletir sobre seu dia';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'A descrição do item de ação não pode estar vazia';
@@ -3899,10 +3896,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get trackPersonalGoals => 'Acompanhar metas pessoais na página inicial';
 
   @override
-  String get dailyReflectionDescription =>
-      'Receba um lembrete às 21h para refletir sobre seu dia e capturar seus pensamentos.';
-
-  @override
   String get endpointURL => 'URL do Endpoint';
 
   @override
@@ -4513,12 +4506,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'Seu plano terminou em $date.\\nAssine novamente agora - você será cobrado imediatamente por um novo período de cobrança.';
+    return 'Seu plano terminou em $date.\nAssine novamente agora - você será cobrado imediatamente por um novo período de cobrança.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'Seu plano está configurado para cancelar em $date.\\nAssine novamente agora para manter seus benefícios - sem cobrança até $date.';
+    return 'Seu plano está configurado para cancelar em $date.\nAssine novamente agora para manter seus benefícios - sem cobrança até $date.';
   }
 
   @override
@@ -5088,7 +5081,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'Ao continuar, todos os dados que você compartilha com este aplicativo (incluindo suas conversas, gravações e informações pessoais) serão armazenados com segurança em nossos servidores para fornecer insights baseados em IA e habilitar todos os recursos do aplicativo.';
+      'Ao continuar, suas conversas, gravações e informações pessoais serão armazenadas com segurança em nossos servidores. Suas gravações de áudio e transcrições são processadas por serviços de IA de terceiros (incluindo Deepgram para transcrição e OpenAI para análise) para fornecer insights baseados em IA e habilitar todos os recursos do aplicativo.';
 
   @override
   String get tasksEmptyStateMessage =>
@@ -6537,7 +6530,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return 'Definir $appName como seu app de resumo padrão?\\n\\nEste app será usado automaticamente para todos os resumos de conversas futuras.';
+    return 'Definir $appName como seu app de resumo padrão?\n\nEste app será usado automaticamente para todos os resumos de conversas futuras.';
   }
 
   @override
@@ -7176,12 +7169,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count conversas foram mescladas com sucesso';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'Hora da reflexão diária';
-
-  @override
-  String get dailyReflectionNotificationBody => 'Conte-me sobre o seu dia';
 
   @override
   String get actionItemReminderTitle => 'Lembrete do Omi';
@@ -8305,6 +8292,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get phoneCallSettingsTitle => 'Configuracoes de chamada';
 
   @override
+  String get showPhoneCallButtonTitle => 'Mostrar botão de chamada';
+
+  @override
+  String get showPhoneCallButtonDesc => 'Exibir botão de chamada telefônica na tela inicial';
+
+  @override
   String get yourVerifiedNumbers => 'Seus numeros verificados';
 
   @override
@@ -9143,4 +9136,100 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'Você atingiu seu limite mensal. Atualize para continuar conversando com Omi sem restrições.';
+
+  @override
+  String get voiceResponseAudio => 'Ler resposta do Omi em voz alta';
+
+  @override
+  String get voiceResponseMode => 'Resposta por voz';
+
+  @override
+  String get voiceResponseModeTitle => 'Quando ler respostas';
+
+  @override
+  String get voiceResponseOff => 'Desligado';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'Apenas fones';
+
+  @override
+  String get voiceResponseAlways => 'Sempre';
+
+  @override
+  String get agreeAndContinue => 'Aceitar e continuar';
+
+  @override
+  String get startVoiceRecording => 'Iniciar gravação de voz';
+
+  @override
+  String get startCallRecording => 'Iniciar gravação de chamada';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'Modo de voz';
+
+  @override
+  String get quickActionAskOmi => 'Pergunte qualquer coisa ao Omi';
+
+  @override
+  String get record => 'Gravar';
+
+  @override
+  String get stop => 'Parar';
+
+  @override
+  String get recordWithPhoneMic => 'Gravar com o microfone do telefone';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'Capture o áudio ao seu redor';
+
+  @override
+  String get phoneCall => 'Chamada telefônica';
+
+  @override
+  String get phoneCallSubtitle => 'Grave uma chamada com transcrição ao vivo';
+
+  @override
+  String get searchActionItems => 'Pesquisar itens de ação';
+
+  @override
+  String get selectActionItems => 'Selecionar vários';
+
+  @override
+  String chooseExportDestination(int count) {
+    return 'Exportar $count item(ns) para…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'Exportando…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return 'Exportados $count para $platform';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return 'Exportados $success de $total para $platform';
+  }
+
+  @override
+  String get showCompletedTasks => 'Mostrar concluídas';
+
+  @override
+  String get hideCompletedTasks => 'Ocultar concluídas';
+
+  @override
+  String get selectAllTasksMenu => 'Selecionar todos';
+
+  @override
+  String get connectTaskAppToExport => 'Conecte um aplicativo de tarefas nas Configurações para exportar';
+
+  @override
+  String get connectAction => 'Conectar';
+
+  @override
+  String get deselectAllTasksMenu => 'Desmarcar todos';
 }

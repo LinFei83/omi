@@ -2381,6 +2381,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get batteryLevel => 'ಬ್ಯಾಟರಿ ಸ್ತರ';
 
   @override
+  String get charging => 'ಚಾರ್ಜ್ ಆಗುತ್ತಿದೆ';
+
+  @override
   String get productUpdate => 'ಉತ್ಪನ್ನ ನವೀಕರಣ';
 
   @override
@@ -2507,12 +2510,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get trackPersonalGoalsOnHomepage => 'ಹೋಮ್‌ಪೇಜ್‌ನಲ್ಲಿ ನಿಮ್ಮ ವ್ಯಕ್ತಿಗತ ಲಕ್ಷ್ಯಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ';
-
-  @override
-  String get dailyReflection => 'ದೈನಿಕ ಪ್ರತಿಫಲನ';
-
-  @override
-  String get get9PmReminderToReflect => 'ನಿಮ್ಮ ದಿನದ ಮೇಲೆ ಪ್ರತಿಫಲಿತ ಮಾಡಲು ರಾತ್ರಿ 9 ಬಾರಿ ಸ್ಮರಣೆ ಪಡೆಯಿರಿ';
 
   @override
   String get actionItemDescriptionCannotBeEmpty => 'ಕ್ರಿಯೆ ಪದ ವಿವರಣೆ ಖಾಲಿ ಇರಬಾರದು';
@@ -3932,10 +3929,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get trackPersonalGoals => 'ಮುಖ್ಯ ಪುಟದಲ್ಲಿ ವ್ಯಕ್ತಿಗತ ಲಕ್ಷ್ಯಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ';
 
   @override
-  String get dailyReflectionDescription =>
-      'ನಿಮ್ಮ ದಿನವನ್ನು ಪ್ರತಿಫಲಿತ ಮಾಡಲು ಮತ್ತು ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಿಡಿದುಕೊಳ್ಳಲು ರಾತ್ರಿ 9 ಗಂಟೆಗೆ ಸ್ಮರಣೀಯ ಪಡೆಯಿರಿ.';
-
-  @override
   String get endpointURL => 'ಸಮಾಪ್ತಿ URL';
 
   @override
@@ -4548,12 +4541,12 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String planEndedOn(String date) {
-    return 'ನಿಮ್ಮ ಯೋಜನೆ $date ಅನ್ನು ಕೊನೆಗೊಂಡಿತು.\\nಈಗ ಮರುಸದಸ್ಯಗೊಳಿಸಿ - ನಿಮಗೆ ಹೊಸ ಬಿಲಿಂಗ್ ಅವಧಿಗೆ ತಕ್ಷಣವೇ ಶುಲ್ಕ ವಿಧಿಸಲಾಗುವುದು.';
+    return 'ನಿಮ್ಮ ಯೋಜನೆ $date ಅನ್ನು ಕೊನೆಗೊಂಡಿತು.\nಈಗ ಮರುಸದಸ್ಯಗೊಳಿಸಿ - ನಿಮಗೆ ಹೊಸ ಬಿಲಿಂಗ್ ಅವಧಿಗೆ ತಕ್ಷಣವೇ ಶುಲ್ಕ ವಿಧಿಸಲಾಗುವುದು.';
   }
 
   @override
   String planSetToCancelOn(String date) {
-    return 'ನಿಮ್ಮ ಯೋಜನೆ $date ಮೇಲೆ ರದ್ದುಗೊಳಿಸುವ ನಿರ್ಧಾರವನ್ನು ಹೊಂದಿದೆ.\\nನಿಮ್ಮ ಪ್ರಯೋಜನಗಳನ್ನು ಮುಂದುವರಿಸಲು ಈಗ ಮರುಸದಸ್ಯಗೊಳಿಸಿ - $date ವರೆಗೆ ಯಾವುದೇ ಶುಲ್ಕ ಇಲ್ಲ.';
+    return 'ನಿಮ್ಮ ಯೋಜನೆ $date ಮೇಲೆ ರದ್ದುಗೊಳಿಸುವ ನಿರ್ಧಾರವನ್ನು ಹೊಂದಿದೆ.\nನಿಮ್ಮ ಪ್ರಯೋಜನಗಳನ್ನು ಮುಂದುವರಿಸಲು ಈಗ ಮರುಸದಸ್ಯಗೊಳಿಸಿ - $date ವರೆಗೆ ಯಾವುದೇ ಶುಲ್ಕ ಇಲ್ಲ.';
   }
 
   @override
@@ -5120,11 +5113,11 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get consentDataMessage =>
-      'ಮುಂದುವರಿಸುವ ಮೂಲಕ, ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ ಜೊತೆ ಹಂಚಿಕೊಂಡ ಎಲ್ಲಾ ಡೇಟಾ (ನಿಮ್ಮ ಸಂಭಾಷಣೆಗಳು, ರೆಕಾರ್ಡಿಂಗ್‌ಗಳು ಮತ್ತು ಲೋಕಪ್ರಿಯ ಮಾಹಿತಿ ಸೇರಿದಂತೆ) ನಮ್ಮ ಸರ್ವರ್‌ಗಳಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹ ಮಾಡಲಾಗುತ್ತದೆ ಮತ್ತು ನಿಮಗೆ AI-ಚಾಲಿತ ಒಳನೋಟಗಳನ್ನು ಒದಗಿಸಲು ಮತ್ತು ಎಲ್ಲಾ ಅಪ್ಲಿಕೇಶನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಸಕ್ರಿಯ ಮಾಡಲು ಬಳಸಲಾಗುತ್ತದೆ.';
+      'ಮುಂದುವರಿಯುವ ಮೂಲಕ, ನಿಮ್ಮ ಸಂಭಾಷಣೆಗಳು, ರೆಕಾರ್ಡಿಂಗ್‌ಗಳು ಮತ್ತು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನಮ್ಮ ಸರ್ವರ್‌ಗಳಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಆಡಿಯೋ ರೆಕಾರ್ಡಿಂಗ್‌ಗಳು ಮತ್ತು ಟ್ರಾನ್ಸ್‌ಕ್ರಿಪ್ಟ್‌ಗಳನ್ನು ಮೂರನೇ ವ್ಯಕ್ತಿಯ AI ಸೇವೆಗಳಿಂದ ಸಂಸ್ಕರಿಸಲಾಗುತ್ತದೆ (ಟ್ರಾನ್ಸ್‌ಕ್ರಿಪ್ಷನ್‌ಗಾಗಿ Deepgram ಮತ್ತು ವಿಶ್ಲೇಷಣೆಗಾಗಿ OpenAI ಸೇರಿದಂತೆ) AI-ಚಾಲಿತ ಒಳನೋಟಗಳನ್ನು ಒದಗಿಸಲು ಮತ್ತು ಎಲ್ಲಾ ಅಪ್ಲಿಕೇಶನ್ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು.';
 
   @override
   String get tasksEmptyStateMessage =>
-      'ನಿಮ್ಮ ಸಂಭಾಷಣೆಗಳಿಂದ ಕಾರ್ಯಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.\\nಒಂದು ಹಸ್ತಚಾಲಿತವಾಗಿ ರಚಿಸಲು + ಟ್ಯಾಪ್ ಮಾಡಿ.';
+      'ನಿಮ್ಮ ಸಂಭಾಷಣೆಗಳಿಂದ ಕಾರ್ಯಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.\nಒಂದು ಹಸ್ತಚಾಲಿತವಾಗಿ ರಚಿಸಲು + ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
   String get clearChatAction => 'ಚ್ಯಾಟ್ ತೀಕ್ಷ್ಣ ಮಾಡಿ';
@@ -5157,14 +5150,14 @@ class AppLocalizationsKn extends AppLocalizations {
   String get checkingAppleWatch => 'Apple Watch ಪರಿಶೀಲಿಸುತ್ತಿದೆ...';
 
   @override
-  String get installOmiOnAppleWatch => 'Omi ಅನ್ನು ನಿಮ್ಮ\\nApple Watch ನಲ್ಲಿ ಸ್ಥಾಪಿಸಿ';
+  String get installOmiOnAppleWatch => 'Omi ಅನ್ನು ನಿಮ್ಮ\nApple Watch ನಲ್ಲಿ ಸ್ಥಾಪಿಸಿ';
 
   @override
   String get installOmiOnAppleWatchDescription =>
       'Omi ನೊಂದಿಗೆ ಆಪಲ್ ಗಡಿಯಾರವನ್ನು ಬಳಸಲು, ನೀವು ಮೊದಲು ನಿಮ್ಮ ಗಡಿಯಾರದಲ್ಲಿ Omi ಅಪ್ಲಿಕೇಶನ ಸ್ಥಾಪಿಸಬೇಕು.';
 
   @override
-  String get openOmiOnAppleWatch => 'Omi ಅನ್ನು ನಿಮ್ಮ\\nApple Watch ನಲ್ಲಿ ತೆರೆಯಿರಿ';
+  String get openOmiOnAppleWatch => 'Omi ಅನ್ನು ನಿಮ್ಮ\nApple Watch ನಲ್ಲಿ ತೆರೆಯಿರಿ';
 
   @override
   String get openOmiOnAppleWatchDescription =>
@@ -5418,7 +5411,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get wrappedProcessingDefault => 'ಪ್ರಕ್ರಿಯೆ ಮಾಡುತ್ತಿದೆ...';
 
   @override
-  String get wrappedCreatingYourStory => 'ನಿಮ್ಮ\\n2025 ಕಥೆಯನ್ನು ರಚಿಸುತ್ತಿದೆ...';
+  String get wrappedCreatingYourStory => 'ನಿಮ್ಮ\n2025 ಕಥೆಯನ್ನು ರಚಿಸುತ್ತಿದೆ...';
 
   @override
   String get wrappedSomethingWentWrong => 'ಏನೋ ತಪ್ಪಾಗಿದೆ';
@@ -6569,7 +6562,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String setDefaultAppContent(String appName) {
-    return '$appName ನಿಮ್ಮ ಡಿಫಾಲ್ಟ್ ಸಾರಾಂಶ ಅಪ್ಲಿಕೇಶನ್ ಹೊಂದಿಸುವುದೇ?\\n\\nಈ ಅಪ್ಲಿಕೇಶನ್ ಭವಿಷ್ಯತ್ತಿನ ಎಲ್ಲಾ ಸಂಭಾಷಣೆ ಸಾರಾಂಶಗಳಿಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬಳಸಲಾಗುವುದು.';
+    return '$appName ನಿಮ್ಮ ಡಿಫಾಲ್ಟ್ ಸಾರಾಂಶ ಅಪ್ಲಿಕೇಶನ್ ಹೊಂದಿಸುವುದೇ?\n\nಈ ಅಪ್ಲಿಕೇಶನ್ ಭವಿಷ್ಯತ್ತಿನ ಎಲ್ಲಾ ಸಂಭಾಷಣೆ ಸಾರಾಂಶಗಳಿಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬಳಸಲಾಗುವುದು.';
   }
 
   @override
@@ -7208,12 +7201,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String mergeConversationsSuccessBody(int count) {
     return '$count ಸಂಭಾಷಣೆಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಮ್ಮಿಳಿತ ಮಾಡಲಾಗಿದೆ';
   }
-
-  @override
-  String get dailyReflectionNotificationTitle => 'ದೈನಿಕ ಪ್ರತಿಫಲನದ ಸಮಯ';
-
-  @override
-  String get dailyReflectionNotificationBody => 'ನಿಮ್ಮ ದಿನದ ಬಗ್ಗೆ ನನಗೆ ಹೇಳಿ';
 
   @override
   String get actionItemReminderTitle => 'Omi ಜ್ಞಾಪಕ';
@@ -8334,6 +8321,12 @@ class AppLocalizationsKn extends AppLocalizations {
   String get phoneCallSettingsTitle => 'ಫೋನ್ ಕರೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು';
 
   @override
+  String get showPhoneCallButtonTitle => 'ಫೋನ್ ಕಾಲ್ ಬಟನ್ ತೋರಿಸಿ';
+
+  @override
+  String get showPhoneCallButtonDesc => 'ಮುಖ್ಯ ಪರದೆಯಲ್ಲಿ ಫೋನ್ ಕಾಲ್ ಬಟನ್ ಪ್ರದರ್ಶಿಸಿ';
+
+  @override
   String get yourVerifiedNumbers => 'ನಿಮ್ಮ ಪರಿಶೀಲಿತ ಸಂಖ್ಯೆಗಳು';
 
   @override
@@ -9171,4 +9164,100 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get chatQuotaExceededReply =>
       'ನೀವು ನಿಮ್ಮ ಮಾಸಿಕ ಮಿತಿಯನ್ನು ತಲುಪಿದ್ದೀರಿ. ನಿರ್ಬಂಧಗಳಿಲ್ಲದೆ Omi ಜೊತೆ ಚಾಟ್ ಮುಂದುವರಿಸಲು ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ.';
+
+  @override
+  String get voiceResponseAudio => 'Omi ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಜೋರಾಗಿ ಓದಿ';
+
+  @override
+  String get voiceResponseMode => 'ಧ್ವನಿ ಪ್ರತಿಕ್ರಿಯೆ';
+
+  @override
+  String get voiceResponseModeTitle => 'ಪ್ರತಿಕ್ರಿಯೆ ಯಾವಾಗ';
+
+  @override
+  String get voiceResponseOff => 'ಆಫ್';
+
+  @override
+  String get voiceResponseHeadphonesOnly => 'ಹೆಡ್‌ಫೋನ್‌ಗಳು ಮಾತ್ರ';
+
+  @override
+  String get voiceResponseAlways => 'ಯಾವಾಗಲೂ';
+
+  @override
+  String get agreeAndContinue => 'ಒಪ್ಪಿಗೆ ಮತ್ತು ಮುಂದುವರಿಯಿರಿ';
+
+  @override
+  String get startVoiceRecording => 'ಧ್ವನಿ ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಿ';
+
+  @override
+  String get startCallRecording => 'ಕರೆ ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಿ';
+
+  @override
+  String get mindMap => 'Mind Map';
+
+  @override
+  String get voiceMode => 'ಧ್ವನಿ ಮೋಡ್';
+
+  @override
+  String get quickActionAskOmi => 'Omi ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ';
+
+  @override
+  String get record => 'ರೆಕಾರ್ಡ್';
+
+  @override
+  String get stop => 'ನಿಲ್ಲಿಸಿ';
+
+  @override
+  String get recordWithPhoneMic => 'ಫೋನ್ ಮೈಕ್‌ನೊಂದಿಗೆ ರೆಕಾರ್ಡ್ ಮಾಡಿ';
+
+  @override
+  String get recordWithPhoneMicSubtitle => 'ನಿಮ್ಮ ಸುತ್ತಲಿನ ಆಡಿಯೋ ಸೆರೆಹಿಡಿಯಿರಿ';
+
+  @override
+  String get phoneCall => 'ಫೋನ್ ಕರೆ';
+
+  @override
+  String get phoneCallSubtitle => 'ಲೈವ್ ಪ್ರತಿಲೇಖನದೊಂದಿಗೆ ಕರೆಯನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ';
+
+  @override
+  String get searchActionItems => 'ಕ್ರಿಯಾ ಐಟಂಗಳನ್ನು ಹುಡುಕಿ';
+
+  @override
+  String get selectActionItems => 'ಬಹು ಆಯ್ಕೆ';
+
+  @override
+  String chooseExportDestination(int count) {
+    return '$count ಐಟಂ(ಗಳನ್ನು) ರಫ್ತು ಮಾಡಿ…';
+  }
+
+  @override
+  String get bulkExportInProgress => 'ರಫ್ತು ಮಾಡಲಾಗುತ್ತಿದೆ…';
+
+  @override
+  String bulkExportSuccess(int count, String platform) {
+    return '$count ಅನ್ನು $platform ಗೆ ರಫ್ತು ಮಾಡಲಾಗಿದೆ';
+  }
+
+  @override
+  String bulkExportPartial(int success, int total, String platform) {
+    return '$total ರಲ್ಲಿ $success ಅನ್ನು $platform ಗೆ ರಫ್ತು ಮಾಡಲಾಗಿದೆ';
+  }
+
+  @override
+  String get showCompletedTasks => 'ಪೂರ್ಣಗೊಂಡವು ತೋರಿಸಿ';
+
+  @override
+  String get hideCompletedTasks => 'ಪೂರ್ಣಗೊಂಡವು ಮರೆಮಾಡಿ';
+
+  @override
+  String get selectAllTasksMenu => 'ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆ ಮಾಡಿ';
+
+  @override
+  String get connectTaskAppToExport => 'ರಫ್ತು ಮಾಡಲು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯ ಅಪ್ಲಿಕೇಶನ್ ಸಂಪರ್ಕಿಸಿ';
+
+  @override
+  String get connectAction => 'ಸಂಪರ್ಕಿಸಿ';
+
+  @override
+  String get deselectAllTasksMenu => 'ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆ ರದ್ದು ಮಾಡಿ';
 }
