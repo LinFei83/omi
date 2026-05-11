@@ -1,73 +1,73 @@
-# Omi Consumer — Open Source Hardware
+# Omi Consumer — 开源硬件
 
-Complete hardware design files for the Omi Consumer, the world's leading open-source AI wearable.
+Omi Consumer 的完整硬件设计文件，全球领先的开源 AI 可穿戴设备。
 
-Licensed under MIT (see [LICENSE](LICENSE)).
+采用 MIT 许可证（见 [LICENSE](LICENSE)）。
 
-## What's Inside
+## 目录说明
 
-### Electrical (`electrical/`)
-- **Mainboard** (nRF5340 + nRF7002): Altium source, Gerber files, schematics (v1.2)
-- **Charger Board**: Altium source, Gerber files, schematic (v1.0)
-- **FPC (Flexible PCB)**: Altium source, Gerber files, schematic (v1.0)
+### 电气（`electrical/`）
+- **主板**（nRF5340 + nRF7002）：Altium 源文件、Gerber、原理图（v1.2）
+- **充电板**：Altium 源文件、Gerber、原理图（v1.0）
+- **FPC（柔性 PCB）**：Altium 源文件、Gerber、原理图（v1.0）
 
-### Bill of Materials (`bom/`)
-- 88 components with manufacturer part numbers (MPN)
-- Available in CSV and XLSX formats
+### 物料清单（`bom/`）
+- 88 个元器件，含制造商料号（MPN）
+- 提供 CSV 与 XLSX 格式
 
-### Mechanical (`mechanical/`)
-- Full device + charger STEP assembly
-- Individual parts organized by manufacturing process:
-  - **CNC**: Aluminium covers (Case A, Case B), copper touch pins
-  - **Injection Molding**: Wrapper/shell (PC+ABS)
-  - **Silicone**: Internal pad (50A/80A durometer)
-  - **SLA**: Frame, LED guide, charger cases, enhance plate
-- 2D technical drawings (PDF)
+### 机械（`mechanical/`）
+- 整机 + 充电器的完整 STEP 装配体
+- 按工艺分类的零件：
+  - **CNC**：铝外壳（Case A、Case B）、铜质触摸针
+  - **注塑**：包覆/外壳（PC+ABS）
+  - **硅胶**：内部衬垫（50A/80A 邵氏硬度）
+  - **SLA**：框架、导光件、充电器外壳、增强板
+- 二维工程图（PDF）
 
-### Assembly (`assembly/`)
-- Exploded view photos
-- Component identification photos
-- Materials labelled reference images
+### 装配（`assembly/`）
+- 爆炸图照片
+- 元器件识别照片
+- 带材料标注的参考图
 
-### Packaging (`packaging/`)
-- 3D CAD models: foam inserts, case, sheet metal, full assembly
-- Package drawings and reference photos
+### 包装（`packaging/`）
+- 三维 CAD：泡棉内衬、外壳、钣金、完整装配
+- 包装图纸与参考照片
 
-## Technical Specifications
+## 技术规格
 
-| Component | Specification |
+| 部件 | 规格 |
 |-----------|---------------|
-| Processor | nRF5340 dual-core Bluetooth LE SoC |
-| Wi-Fi | nRF7002 Wi-Fi 6 chip |
-| Audio | 2x TDK T5838 top-port PDM microphones |
-| Storage | CSNP4GCR01 4Gbit NAND Flash |
-| IMU | LSM6DS3TR-C 6-axis accelerometer/gyroscope |
-| Battery | 3.7V 150mAh LiPo (custom, D16xH6.1mm) |
-| Charging | BQ25101 Li-Ion charger IC, magnetic pogo pins |
-| Motor | 3V vibration motor (D5.0xH2.5mm) |
+| 处理器 | nRF5340 双核 Bluetooth LE SoC |
+| Wi-Fi | nRF7002 Wi-Fi 6 芯片 |
+| 音频 | 2× TDK T5838 顶出音孔 PDM 麦克风 |
+| 存储 | CSNP4GCR01 4Gbit NAND Flash |
+| IMU | LSM6DS3TR-C 六轴加速度计/陀螺仪 |
+| 电池 | 3.7V 150mAh 锂聚合物（定制，D16×H6.1mm） |
+| 充电 | BQ25101 锂离子充电 IC、磁吸弹簧针 |
+| 马达 | 3V 振动马达（D5.0×H2.5mm） |
 
-## Firmware
+## 固件
 
-The firmware is open source and lives at [`omi/firmware/`](../../firmware/). Built on Zephyr RTOS with nRF Connect SDK.
+固件已开源，位于 [`omi/firmware/`](../../firmware/)。基于 Zephyr RTOS 与 nRF Connect SDK 构建。
 
-## Getting Started
+## 快速上手
 
-1. **Build one**: Use the Gerber files to order PCBs, the BOM to source components, and the STEP files to manufacture the enclosure.
-2. **Modify the design**: Open Altium source files to customize the electronics, or edit STEP files to redesign the enclosure.
-3. **Flash firmware**: Follow the [firmware guide](https://docs.omi.me/doc/developer/firmware/Compile_firmware).
-4. **Documentation**: Visit [docs.omi.me](https://docs.omi.me/doc/hardware/consumer) for detailed guides.
+1. **制作一台**：用 Gerber 订购 PCB，用 BOM 采购物料，用 STEP 文件加工外壳。
+2. **修改设计**：打开 Altium 源文件定制电路，或编辑 STEP 文件重新设计外壳。
+3. **烧录固件**：参阅 [固件指南](https://docs.omi.me/doc/developer/firmware/Compile_firmware)。
+4. **文档**：访问 [docs.omi.me](https://docs.omi.me/doc/hardware/consumer) 获取详细说明。
 
-## File Checksums (SHA-256)
+## 文件校验和（SHA-256）
 
-Use these checksums to verify file integrity after cloning.
+克隆后可用下列校验和核对文件完整性。
 
 ```
 sha256sum -c checksums.sha256
 ```
 
-### Electrical
+### 电气
 
-| File | SHA-256 |
+| 文件 | SHA-256 |
 |------|---------|
 | `electrical/mainboard/altium/omi2-mainboard-v1.2-altium.zip` | `025c79effcebaa63de9a4adbf59cfb15b5adfe8f3d61d4c21d268320acf5c133` |
 | `electrical/mainboard/gerbers/omi2-mainboard-v1.2-gerbers.zip` | `54e126a1aa4e3174eed50e099c7b930646abad261b7f73421ca1526d39dcee49` |
@@ -80,17 +80,17 @@ sha256sum -c checksums.sha256
 | `electrical/fpc-board/gerbers/omi2-fpc-v1.0-gerbers.zip` | `5a8d56466101ef77fd83dc5bd6016d56542443a865142d23864b07aac712ab2b` |
 | `electrical/fpc-board/schematic.pdf` | `31d5c900f54dc586440c8d29093e501bde532c45db455b96ac7c552af102919d` |
 
-### BOM
+### 物料清单（BOM）
 
-| File | SHA-256 |
+| 文件 | SHA-256 |
 |------|---------|
 | `bom/omi-bom.csv` | `01b27487469ddb8ff7b59258959277e3976d6a150b120a643943505c8f892256` |
 | `bom/omi-bom.xlsx` | `1445b549f72a37939be9a38401404e8da7ed45a2029204739dac2733b038987b` |
 | `bom/omi-bom-original.xlsx` | `a8744d573bc02b62952e164776f72f30ee7929874666da7b452fbc5e8dde6764` |
 
-### Mechanical
+### 机械
 
-| File | SHA-256 |
+| 文件 | SHA-256 |
 |------|---------|
 | `mechanical/assemblies/omi-device-charger-assembly.step` | `d7df1b004e159365b69ef57995a21f49e17dbe18d863b359ef611c6f84e473d1` |
 | `mechanical/parts/cnc/case-a.step` | `6a23a0693e3d0e0c3068474cb46931f32e7850d6e22266a902060762f165eb1b` |
@@ -114,9 +114,9 @@ sha256sum -c checksums.sha256
 | `mechanical/drawings/omi-2d-drawings.pdf` | `3eb768218947591cea0ae115219fddd1ae40cc9df332d935681289bb778e8861` |
 | `mechanical/drawings/manufacturing-specifications.png` | `13ebd6b23de37919f457b96734538ff36be70ec7d6d5f1e94d7a9826393641fb` |
 
-### Packaging
+### 包装
 
-| File | SHA-256 |
+| 文件 | SHA-256 |
 |------|---------|
 | `packaging/cad/packaging-full-assembly.step` | `95298ba059e96c83456d7396db0f50328eaa3931776e65ccbc60e1698b4fa2e4` |
 | `packaging/cad/case-packaging.step` | `cd9e71389791b07a10fb84378a1437f069d26292cc4a977ef2fb76296c7ba28d` |
@@ -129,18 +129,18 @@ sha256sum -c checksums.sha256
 | `packaging/cad/foam/foam-drawing.pdf` | `6b1686aa8c1d89c2dc5d511c2abb55b1f456d508b9485d78f037599c10ac2671` |
 | `packaging/package-drawing.pdf` | `f9b64171b32a1c432ecd3949f5fc51a28b339b52336c23ef70b2f9e335c173f9` |
 
-### Assembly Photos
+### 装配照片
 
-| File | SHA-256 |
+| 文件 | SHA-256 |
 |------|---------|
 | `assembly/photos/components-disassembled.jpg` | `880e774b49f56a8ec7bf4f4075483f5c0bcf7c0e39962d874d54deb0428b5b71` |
 | `assembly/photos/materials-labelled-exploded-view.jpg` | `0cb3e22f08dceaa5cce9c569510985251c2b6c580718ad8d2559987019c2fd00` |
 | `assembly/photos/materials-labelled.jpg` | `7857e7b6f7e1686899dd51ec9d11196905ff1f539f09aff08ae2b724904a9555` |
 | `assembly/photos/outer-aluminium-covers.jpg` | `0ce99ecfffba3b11a91e754c90c9f4b8c1a14c779b1124cbe6c8b6a69ce71ab1` |
 
-### Packaging Photos
+### 包装照片
 
-| File | SHA-256 |
+| 文件 | SHA-256 |
 |------|---------|
 | `packaging/photos/disassembly-exploded-view.png` | `bfc5a0fa7ed8997aa882cefcff1b7a750578aa6e323e63b720de7ea64d3d54a4` |
 | `packaging/photos/package-overview.png` | `2556dd78a18397aa58ed8cb27edd48de5536ce08168a2db371de3e7564f476ad` |
@@ -153,7 +153,7 @@ sha256sum -c checksums.sha256
 | `packaging/photos/packaging-6.jpg` | `a2288a15cb8e9ac8dfc074fed6a6e61a060ff09cecffc6939a92948bfa8dccb5` |
 | `packaging/photos/packaging-7.jpg` | `5d0ceae15ed4191c43319c450d89e9a3fcd9ae35db05f605336dd9c8e6d1ca70` |
 
-## Questions?
+## 有疑问？
 
-- [GitHub Issues](https://github.com/BasedHardware/omi/issues) for bugs and feature requests
-- [Discord](https://discord.gg/omi) for community discussion
+- [GitHub Issues](https://github.com/BasedHardware/omi/issues)：缺陷与功能建议
+- [Discord](https://discord.gg/omi)：社区讨论
